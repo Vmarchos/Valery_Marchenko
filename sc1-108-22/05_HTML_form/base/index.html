@@ -113,10 +113,11 @@
                                 <option value="Минск">Минск</option>
                                 <option value="Витебск">Витебск</option>
                             </optgroup>
-                            <optgroup label="Города России"></optgroup>
-                            <option value="Москва">Москва</option>
-                            <option value="Рязань">Рязань</option>
-                            <option value="Магадан">Магадан</option>
+                            <optgroup label="Города России">
+                                <option value="Москва">Москва</option>
+                                <option value="Рязань">Рязань</option>
+                                <option value="Магадан">Магадан</option>
+                            </optgroup>
 
                         </select>
 
@@ -145,15 +146,15 @@
             <td>
                 <form id="form_8" action="http://fe.it-academy.by/TestForm.php" name="phone" method="get">
 
-                
-                <fieldset>
-                    <legend>Строка поиска</legend>
-                    <input type="text" name="word" placeholder="Только русские буквы" pattern="^[А-Яа-я\s]+$">
-                    <br>
-                    <input type="tel" name="num" placeholder="+375-29-1234567" pattern="\+?[ 0-9]+$">
-                    <input type="submit" value="проверить">
-                </fieldset>
-            </form>
+
+                    <fieldset>
+                        <legend>Строка поиска</legend>
+                        <input type="text" name="word" placeholder="Только русские буквы" pattern="^[А-Яа-я\s]+$">
+                        <br>
+                        <input type="tel" name="num" placeholder="+375-29-1234567" pattern="\+?^[ 0-9]+$">
+                        <input type="submit" value="проверить">
+                    </fieldset>
+                </form>
             </td>
         </tr>
 
