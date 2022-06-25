@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <style>
-        .header {
+        .wrap {
             background-color: rgb(222, 211, 211);
+           padding-left: 15.4em;
+        }
+
+        .header {
+            background-color: rgba(222, 211, 211, 0.841);
             width: 15em;
             max-width: 15em;
-            padding: .2em 2em;
-            margin-bottom:2em;
-
-
+            padding: .2em;
+            margin-bottom: 4em;
             float: left;
         }
 
@@ -20,8 +23,10 @@
             background-color: gray;
             margin-bottom: .2em;
             padding: .2em;
+            width: auto;
         }
-        .footer{
+
+        .footer {
             background-color: rgba(201, 196, 196, 0.908);
 
         }
@@ -29,6 +34,7 @@
 </head>
 
 <body>
+
     <div class="header">
         <h4>Блок навигации</h4>
         <ul>
@@ -58,27 +64,29 @@
 
 
     </div>
-    <div class="content">
-        <h4>Статья 2</h4>
-        <p>Размер блока:
-            <br>
-            Занимает всю доступную ширину
-            <br>
-            Должен присутствовать цвет фона
-            <br>
-            Во всех статьях сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-
-            <img src="images/svg.svg " style="float:right">
-            <br>
-            bottom. Картинка вставлена при помощи тега, плавание организовано по правому краю внутри
-            <br>
-            данной статьи для этой картинки
-             
-        </p>
+    <div class="wrap">
+        <div class="content">
+            <h4>Статья 2</h4>
+            <p>Размер блока:
+                <br>
+                Занимает всю доступную ширину
+                <br>
+                Должен присутствовать цвет фона
+                <br>
+                Во всех статьях сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-
+                <img src="images/svg.svg " style="float:right">
+                <br>
+                bottom. Картинка вставлена при помощи тега, плавание организовано по правому краю внутри
+                <br>
+                данной статьи для этой картинки
 
-       
-
+            </p>
 
 
+
+
+
+        </div>
     </div>
     <div class="footer">
         Нижний блок,подвал.Занимает всю доступную ширину. Высота определяется помещенным внутри контентом
