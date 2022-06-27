@@ -1,0 +1,23 @@
+h4 {
+    text-align: right;
+}
+.contacts{
+    text-align: right;
+}
+h3{
+    text-align: start;
+    text-decoration:underline;
+    font-family: "Bad Script", cursive;
+}
+.text{
+    text-align: start;
+    font-family: 'Bad Script', cursive;
+}
+.end{
+    text-align: left;
+    font-weight: bold;
+}
+.name{
+    text-align: left;
+    font-weight: bold;
+}
