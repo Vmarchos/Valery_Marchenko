@@ -6,12 +6,12 @@
     <title>Document</title>
     <style>
         .wrap {
-            background-color: rgb(222, 211, 211);
-           padding-left: 15.4em;
+            background-color: rgba(219, 213, 213, 0.977);
+           
         }
 
         .header {
-            background-color: rgba(222, 211, 211, 0.841);
+            background-color: rgba(187, 177, 177, 0.604);
             width: 15em;
             max-width: 15em;
             padding: .2em;
@@ -24,12 +24,14 @@
             margin-bottom: .2em;
             padding: .2em;
             width: auto;
+            margin-left: 15.4em;
         }
 
         .footer {
             background-color: rgba(201, 196, 196, 0.908);
 
         }
+        .clear{clear: both;}
     </style>
 </head>
 
@@ -48,6 +50,7 @@
 
 
     </div>
+    <div class="wrap">
     <div class="content">
         <h4>Статья 1</h4>
         <p>Размер блока:
@@ -64,7 +67,7 @@
 
 
     </div>
-    <div class="wrap">
+    
         <div class="content">
             <h4>Статья 2</h4>
             <p>Размер блока:
@@ -88,6 +91,7 @@
 
         </div>
     </div>
+    <div class="clear"></div>
     <div class="footer">
         Нижний блок,подвал.Занимает всю доступную ширину. Высота определяется помещенным внутри контентом
     </div>

@@ -1,23 +1,29 @@
 h4 {
     text-align: right;
+    margin: 1em 10em;
 }
 .contacts{
     text-align: right;
+    margin: 0 10em;
 }
 h3{
     text-align: start;
     text-decoration:underline;
     font-family: "Bad Script", cursive;
+    margin-inline-start: 17em;
 }
 .text{
     text-align: start;
     font-family: 'Bad Script', cursive;
+    margin-inline-start: 20em;
 }
 .end{
     text-align: left;
     font-weight: bold;
+    margin-inline-start: 20em;
 }
 .name{
     text-align: left;
     font-weight: bold;
+    margin-inline-start: 20em;
 }
