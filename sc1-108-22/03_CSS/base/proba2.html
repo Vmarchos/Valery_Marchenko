@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .wrap{ background-color: aqua;
+           display: flex;
+           flex-direction: row;
+           
+        }
+    div.DateTable{  width:200px;; font-size: 2em;
+  
+    }
+    div.DateTable>div{
+        background-color: grey;border: black solid 2px;position:relative;cursor: pointer; border-radius: 5px;
+        
+    }
+    div.MenuLevel2{
+        width: 150px;display:none;
+    }
+    div.MenuLevel2>div{
+        background-color: rgb(223, 29, 29);border: solid black 2px;cursor: pointer;border-radius: 5px;  }
+    div.DateTable > div:hover div.MenuLevel2  {display:block; position:absolute;  top: 90%; z-index: 1; 
+    }
+    @media all and(max-width:507px){
+        div.DateTable{ width:700px; display: flex;
+            flex-direction: column;
+    }
+    div.DateTable>div{
+        background-color: grey;border: black solid 2px;position:relative;cursor: pointer; border-radius: 5px;
+    }
+    div.MenuLevel2{
+        width: 150px;display:flex;
+    }
+}
+    </style>
+</head>
+<body>
+   <div class="wrap">
+    <div class="DateTable">
+        <div>Понедельник</div>
+        
+            <div >Вторник</div>
+        
+        <div>Среда
+            <div class="MenuLevel2">
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div>Четверг</div>
+        <div>Пятница</div>
+        <div>Суббота</div>
+   
+    </div>
+</div>
+</div>
+</body>
+</html>
+

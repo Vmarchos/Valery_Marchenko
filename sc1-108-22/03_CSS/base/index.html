@@ -4,15 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <style>
+        div.days{background-color: gray; border: solid black 2px;  cursor: pointer;
+        width:100px;
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        }
+        .food:hover{ display: block; position: absolute; left: 80%; top: 90%; z-index: 1 
+            
+        }
+        
+    </style>
 </head>
 
 <body>
-    <div class="TimeTable_1">Понедельник</div>
-    <div class="TimeTable_2">
-        <div>Завтрак</div>
-        <div>Обед</div>
-        <div>Ужин</div>
+    <div class=" days">Понедельник
+    <div class="days">Вторник</div>
+    <div class="TimeTable_2 days">Среда
+        <div class="food">Завтрак</div>
+        <div class="food">Обед</div>
+        <div class="food">Ужин</div>
     </div>
+    <div class="days">Четверг</div>
+    <div class="days">Пятница</div>
+    <div class="days">Суббота </div>
+</div>
+    
     
 </body>
 
