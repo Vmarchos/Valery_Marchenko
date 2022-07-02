@@ -1,0 +1,27 @@
+table{
+    border-style: solid;
+    border-color: black;
+    width:1000px;
+    margin: auto;
+}
+td{
+    border-style:solid  ; border: 30px 30px;border-width:1px;
+    height:70px;
+}
+
+.chess tr:nth-child(odd) td:nth-child(odd) {
+
+	background: black;
+
+}	
+.chess tr:nth-child(even) td:nth-child(even) {
+
+	background: black;
+
+}
+td { list-style-type:none; }
+tr { counter-reset: list 0; }
+td:before  {
+counter-increment: list;
+content: counter(list) ". ";
+}

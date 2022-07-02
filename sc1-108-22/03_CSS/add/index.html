@@ -5,24 +5,25 @@
     <title>Document</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-    div.DateTable{  width:300px;; font-size: 2em;display:flex;
+    div.DateTable{  width:200px;; font-size: 2em;display:flex;
         justify-content: flex-start;
         flex-direction:row;
-        
-  
     }
     div.DateTable>div{
         background-color: grey;border: black solid 2px;position:relative;cursor: pointer; border-radius: 5px;
-       
         
     }
     div.MenuLevel2{ 
-        width: 150px;display:none;
-    }
+        width: 150px;display:none;  -webkit-transition: top 2s; 
+    transition:top 2s;}
     div.MenuLevel2>div{
-        background-color:grey;border: solid black 2px;cursor: pointer;border-radius: 5px;  }
-    div.DateTable > div:hover div.MenuLevel2  {display:block; position:absolute;  top: 90%; z-index: 1; 
+        background-color: rgb(223, 29, 29);border: solid black 2px;cursor: pointer;border-radius: 5px;
     }
+    
+    div.DateTable > div:hover div.MenuLevel2  {  display:block; position:absolute;  top: 90%; z-index: 1;
+   
+    }
+   
     @media only screen and (min-device-width: 100px) and (max-device-width: 630px) {
         div.DateTable{display: flex;
             flex-direction: column;
@@ -35,8 +36,8 @@
         
     }
     div.MenuLevel2>div{
-        background-color:grey;border: solid black 2px;cursor: pointer;border-radius: 5px;  }
-    div.DateTable > div:hover div.MenuLevel2  {display:block; position:absolute;left:  90%;top:100%; z-index: 1;padding-left: 10%;
+        background-color: rgb(223, 29, 29);border: solid black 2px;cursor: pointer;border-radius: 5px;  }
+    div.DateTable > div:hover div.MenuLevel2  {display:block; position:absolute;left: 90%;top:100%; z-index: 1;padding-left: 10%;
        
 }
     }
