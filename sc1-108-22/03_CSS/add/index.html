@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    div.DateTable{  width:300px;; font-size: 2em;display:flex;
+        justify-content: flex-start;
+        flex-direction:row;
+        
+  
+    }
+    .DateTable>div{
+        background-color: grey;border: black solid 2px;position:relative;cursor: pointer; border-radius: 5px;
+       
+        
+    }
+    div.MenuLevel2{ 
+        width: 120px;opacity:0;
+        height: 10px;
+    }
+    div.MenuLevel2>div{
+        background-color:grey;border: solid black 2px;cursor: pointer;border-radius: 5px; 
+     }
+    div.DateTable > div:hover div.MenuLevel2  
+    {
+        opacity: 1;
+        position: absolute; 
+        top:101%; 
+        left:1%;
+        z-index: 1;
+        transition-delay: 1s;
+        transition-property: all;
+        transition-duration: 1s;
+    }
+
+
+    
+    @media all and (max-width: 630px) {
+        div.DateTable{display: flex;
+            flex-direction: column;
+    }
+    div.DateTable>div{
+        background-color: grey;border: black solid 2px;position:relative;cursor: pointer; border-radius: 5px;
+    }
+    div.MenuLevel2{
+        width: 120px;opacity:0;
+        height: 10px;
+        
+    }
+    div.MenuLevel2>div{
+        background-color:grey;border: solid black 2px;cursor: pointer;border-radius: 5px;  }
+    div.DateTable > div:hover div.MenuLevel2  {
+        
+        opacity: 1;
+        position: absolute; 
+        padding-left: 100%;
+        z-index: 1;
+        transition-delay: 1s;
+        transition-property: all;
+        transition-duration: 1s;
+       
+}
+    }
+    </style>
+    
+</head>
+<body>
+    <div class="DateTable">
+        <div>Понедельник
+            <div class="MenuLevel2">
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+   
+            <div >Вторник
+                <div class="MenuLevel2">
+                    <div>Завтрак</div>
+                    <div>Обед</div>
+                    <div>Ужин</div>
+                </div>
+            </div>
+        
+        <div>Среда
+            <div class="MenuLevel2">
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div>Четверг
+            <div class="MenuLevel2">
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+                </div>
+        </div>
+        <div>Пятница
+            <div class="MenuLevel2">
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div>Суббота
+            <div class="MenuLevel2">
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+    
+    </div>
+
+</body>
+</html>
