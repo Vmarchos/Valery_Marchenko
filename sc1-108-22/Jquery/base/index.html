@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+    <style>
+        table{
+            border: dotted;
+        }
+        th{
+            background-color: grey;
+        }
+        td{border-left: dotted 1px; border-right: dotted 1px; border-top: dotted 1px; border-collapse: collapse;}
+
+        tr:nth-child(2n+1){background-color: rgba(232, 220, 220, 0.895);}
+        p{
+            margin-left:200px;margin-right: auto;
+        }
+        button{
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+        <th>Фио</th>
+        <th>Пол</th>
+        <th>Должность</th>
+        <th>Дата рож.</th>
+        <th>Данные 01</th>
+        <th>Данные 02</th>
+       
+    </tr>
+    <tr id="one">        
+            <td>Иванов Иван Иванович</td>
+            <td>М</td>
+            <td>Начальник</td>
+            <td>01.01.1960</td>
+            <td>4567</td>
+            <td>3453</td>
+        </tr>
+        <tr id="two">
+            
+            <td>Петрова Илона Петровна</td>
+            <td>Ж</td>
+            <td>Секретарь</td>
+            <td>01.01.1989</td>
+            <td>98795</td>
+            <td>46523</td>
+        </tr>
+        <tr id="three">
+            
+            <td>Сидоров Илья Игоревич</td>
+            <td>М</td>
+            <td>Бухгалтер</td>
+            <td>01.01.1979</td>
+            <td>743434</td>
+            <td>987979</td>
+        </tr>
+        <tr id="four">
+            
+            <td>Пупин Федор Федорович</td>
+            <td>М</td>
+            <td>Водитель</td>
+            <td>01.01.1963</td>
+            <td>74323434</td>
+            <td>9232379</td>
+        </tr>
+        <tr id="five">
+            
+            <td>Крупин Сергей Иванович</td>
+            <td>М</td>
+            <td>Водитель 2</td>
+            <td>01.01.1983</td>
+            <td>3234534</td>
+            <td>923123379</td>
+             
+        </tr>
+       
+    </table>
+    <p>Данные о сотрудниках</p>
+    
+    <br>
+    <button type="button" id="btn" class="btn btn-primary">Нет скрытых строк</button>
+    
+    
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script>
+$("#five").click(function(){
+  $('#five').hide('slow',)
+});
+$("#four").click(function(){
+  $('#four').hide('slow',)
+});
+$("#three").click(function(){
+  $('#three').hide('slow',)
+});
+$("#two").click(function(){
+  $('#two').hide('slow',)
+});
+$("#one").click(function(){
+  $('#one').hide('slow',)
+});
+$('#btn').click(function(){
+    $("#five,#four,#three,#two,#one").show() 
+});
+$('#five').on('click')(function(){
+    $('#btn').text("мой новый текст");
+});
+</script>
+</body>
+</html>
