@@ -1,8 +1,12 @@
-p{
+body{
+    background-color: rgb(94, 219, 173);
+}
+p{ text-align: center;
     font-family: 'Caveat', cursive;
     white-space:pre-line;
+    font-size: xx-large
 }
-.verse{
+.verse{ text-align: center;
     font-family: 'Press Start 2P', cursive;
     white-space: pre-line;
 }
