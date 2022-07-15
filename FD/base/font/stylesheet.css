@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Matryoshka';
+    src: url('Matryoshka-Regular.eot');
+    src: local('Matryoshka Regular'), local('Matryoshka-Regular'),
+        url('Matryoshka-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Matryoshka-Regular.woff2') format('woff2'),
+        url('Matryoshka-Regular.woff') format('woff'),
+        url('Matryoshka-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
