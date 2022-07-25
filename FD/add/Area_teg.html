@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+        integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        body {background-color:beige;
+
+            font-size: large;
+        }
+        h3{
+            text-align: center;
+        }
+        .table1{border-collapse: collapse;
+            width: 100%;
+        
+        }
+        span{
+            color: red;
+        }
+        img{
+            width:100%
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="twen columns">
+                <h3>Определение и использование</h3>
+
+                    <p> Тег &lt;area&gt;  определяет область внутри изображения-карты (изображение-карта представляет собой изображение с щелчком областей).
+                    
+                    Элемент &lt;area&gt;  всегда вложен в тег&lt;map&gt; .</p>
+                    <p>
+                        Каждый элемент &lt;area&gt; определяет активные области изображения, которые являются ссылками. Рисунок с привязанными к нему активными областями называется в совокупности картой-изображением. Такая карта по внешнему виду ничем не отличается от обычного изображения, но при этом оно может быть разбито на невидимые зоны разной формы, где каждая из областей служит ссылкой. Тег &lt;area&gt; задает форму области, ее размеры, устанавливает адрес документа, на который следует сделать ссылку, а также имя окна или фрейма, куда браузер будет загружать документ. Этот тег всегда располагается в контейнере &lt;map&gt;, который связывает координаты областей с изображением.
+
+                       <p> Несколько областей могут перекрывать друг друга, сверху будет та, которая в коде HTML располагается выше.</p>
+            
+                    </p>
+                    <p><b>Примечание:</b> &lt;img&gt; тег связан с &lt;map&gt; атрибут Name элемента и создает связь между изображением и картой.
+                        <br>
+                        <img src="images/area_screen.png" alt="browser support">
+                    </p>
+
+                     <table class="table1">
+                        <tr>
+                            <th style="width:18%"> Атрибут</th>
+                            <th style="width:27%"> Значение</th>
+                            <th> Описание</th>
+                        </tr>
+                        <tr>
+                            <td><a href="http://htmlbook.ru/html/area/alt">alt </a> </td>
+                            <td>text</td>
+                            <td>Задает альтернативный текст для области. Требуется, если атрибут href присутствует</td>
+                        </tr>
+                        <tr>
+                            <td> <a href="http://htmlbook.ru/html/area/coords">coords</a> </td>
+                            <td>coordinates</td>
+                            <td>Задание координат области</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://htmlbook.ru/html/a/download"> download</a></td>
+                            <td>filename</td>
+                            <td>Указывает, что целевой объект будет загружен, когда пользователь щелкнет гиперссылку</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://htmlbook.ru/html/area/href">href </a></td>
+                            <td>URL</td>
+                            <td>Задает целевой объект гиперссылки для области</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://htmlbook.ru/html/area/hreflang">hreflang</a></td>
+                            <td>language_code</td>
+                            <td> Указывает язык целевого URL-адреса</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://www.w3schools.com/tags/att_area_media.asp">media</a></td>
+                            <td>media query</td>
+                            <td>Указывает, какой носитель/устройство оптимизировано для целевого URL-адреса</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://htmlbook.ru/html/area/nohref">nohref</a></td>
+                            <td>value</td>
+                            <td><span>Не поддерживается в HTML5.</span>
+                                <br>
+                                Указывает, что в области отсутствует связанная ссылка</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://programmerbook.ru/html/area/rel/">rel</a></td>
+                            <td>alternate
+                                author
+                                bookmark
+                                help
+                                license
+                                next
+                                nofollow
+                                noreferrer
+                                prefetch
+                                prev
+                                search
+                                tag</td>
+                            <td>Указывает связь между текущим документом и целевым URL-адресом</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://htmlbook.ru/html/area/shape">shape</a></td>
+                            <td>default
+                                rect
+                                <br>
+                                circle
+                                <br>
+                                poly
+                            </td>
+                            <td>Определяет форму области</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://htmlbook.ru/html/area/target">target</a></td>
+                            <td> _blank
+                                <br>
+                                _parent
+                                <br>
+                                _self
+                                <br>
+                                _top
+                                <br>
+                                framename</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://htmlbook.ru/html/area/type">type</a></td>
+                            <td>media_type</td>
+                            <td> Указывает тип носителя целевого URL-адреса</td>
+                        </tr>
+
+                     </table>
+                     <h3>Глобальные атрибуты</h3>
+                     <p>Тег &lt;area&gt; также поддерживает <a target="_blank" href="https://html5css.ru/tags/ref_standardattributes.php">Глобальные атрибуты в HTML.</a></p>
+                    <h3>Атрибуты события</h3>
+                    <p>Тег &lt;area&gt;также поддерживает <a target="_blank" href="https://html5css.ru/tags/ref_eventattributes.php">Атрибуты событий в HTML.</a></p>
+                </div>
+                
+        
+        </div>
+        <div class="row">
+            <div class="four columns">
+                <p>x1,y1,x2,y2 - указывает координаты верхнего левого и правого нижнего угла прямоугольника (shape="rect").
+                <br>
+                Определение координат для прямоугольника (shape="rect"):
+            <img src="images/area_rect.png" alt="Определение координат для прямоугольника"></p>
+            </div>
+            <div class="four columns">
+                <p>
+                    x,y,радиус - определяет координаты центра окружности и радиус (shape="circle").
+                    <br>
+                    Определение координат для окружности (shape="circle"): 
+                    <img src="images/area_circle.png" alt=" Определение координат для окружности">
+                </p>
+            </div>
+            <div class="four columns">
+                <p>x1,y1,x2,y2,...,xn,yn - определяет координаты вершин полигона (многоугольника) (shape="poly").
+                    <br>
+                Определение координат для многоугольника (shape="poly"): 
+                <img src="images/area_poly.png" alt="Определение координат для многоугольника ">
+
+                </p>
+            </div>
+        
+
+        </div>
+        <div class="row">
+            <div class="twen columns">
+                <h3>Пример использования тега Area</h3>
+                <p>
+                    <img src="images/sun sistem.jpeg" alt="sun sistem" usemap="#planets">
+                </p>
+                <map name="planets">
+                    <area shape="rect" coords="0,60,80,498 " href="https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D0%BB%D0%BD%D1%86%D0%B5" target="_blank" alt="sun">
+                    <area shape="circle" coords="120,220,15" href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D1%80%D0%BA%D1%83%D1%80%D0%B8%D0%B9" alt="Mercury">
+                    <area shape="circle" coords="150,205,15" href="https://ru.wikipedia.org/wiki/%D0%92%D0%B5%D0%BD%D0%B5%D1%80%D0%B0" alt="Venus">
+                    <area shape="circle" coords="185,190,20" href="https://ru.wikipedia.org/wiki/%D0%97%D0%B5%D0%BC%D0%BB%D1%8F" alt="Earth">
+                    <area shape="circle" coords="220,170,15" href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D1%80%D1%81" alt="Mars">
+                    <area shape="circle" coords="400,290,70" href="https://ru.wikipedia.org/wiki/%D0%AE%D0%BF%D0%B8%D1%82%D0%B5%D1%80" alt="Jupiter">
+                    <area shape="circle" coords="570,240,70" href="https://ru.wikipedia.org/wiki/%D0%A1%D0%B0%D1%82%D1%83%D1%80%D0%BD" alt="Saturn">
+                    <area shape="circle" coords="710,180,40" href="https://ru.wikipedia.org/wiki/%D0%A3%D1%80%D0%B0%D0%BD_(%D0%BF%D0%BB%D0%B0%D0%BD%D0%B5%D1%82%D0%B0)" alt="Uranus">
+                    <area shape="circle" coords="770,140,40" href="https://ru.wikipedia.org/wiki/%D0%9D%D0%B5%D0%BF%D1%82%D1%83%D0%BD" alt="Neptune">
+                </map>
+
+            </div>
+
+        </div>
+
+    </div>                       
+</body>
+
+</html>
