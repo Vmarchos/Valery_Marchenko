@@ -12,18 +12,68 @@
         a:hover{
             color:red
         }
+        div{
+            margin:10px
+        }
         td {
-            border-right:solid red;
+            border-right:solid red 5px;
             padding: 10px;
+        }
+        td:last-child{
+            border-right: none;
         }
 
         div.second-example ul{ margin-left: -37px;
             
         }
       div.second-example ul li{ padding: 9px;  list-style-type:none;
-        display: inline; border-right: solid red;
+        display: inline; border-right: solid red 5px;
         }
+        div.second-example ul li:last-child{
+            border-right: none;
+        }
+        div.third-example a{
+            float:left ;
+        }
+        div.third-example a{
+            margin-left: 5px; padding: 4px;
+        }
+        div.third-example a{
+            background: url("line.jpeg") right repeat-y;
+            background-size: 5px;
+            margin-right: 3px;
+            padding-right: 16px;
         
+           float: left;
+        }
+        div.third-example a:last-child{
+            background: none;
+        }
+       div.fourth-example a{
+        text-align: left;
+        
+        padding-left: 7px;
+      
+       }
+       div.fourth-example{ margin-top: 60px;
+        clear: both;
+        
+       }
+       div.fourth-example a::after{
+        content: url();
+        background-color: red;
+       padding-top:10px;
+        
+        padding-left:5px;
+        margin-left: 13px;
+       
+       }
+       div.fourth-example a:last-child:after{
+        content: url("");
+        visibility: hidden;
+        
+    
+       }
     
             
         
@@ -56,6 +106,25 @@
 
     </div>
 
+    <div class="third-example">
+        
+            <a href="https://ru.wikipedia.org/wiki/%D0%A1%D1%81%D1%8B%D0%BB%D0%BA%D0%B0">ссылка</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/CSS/margin"> вторая ссылка</a>
+            <a href="http://htmlbook.ru/"> третья ссылка</a>
+            <a href="https://css-live.ru/articles-css/shpargalka-po-shpargalke-po-flexbox.html"> четвертая
+                ссылка</a>
+            <a href="http://sauron.org.ua/post/1254"> пятая ссылка</a>
+
+
+    </div>
+    <div class="fourth-example">
+        <a href="https://ru.wikipedia.org/wiki/%D0%A1%D1%81%D1%8B%D0%BB%D0%BA%D0%B0">ссылка</a>
+        <a href="https://developer.mozilla.org/ru/docs/Web/CSS/margin"> вторая ссылка</a>
+        <a href="http://htmlbook.ru/"> третья ссылка</a>
+        <a href="https://css-live.ru/articles-css/shpargalka-po-shpargalke-po-flexbox.html"> четвертая
+            ссылка</a>
+        <a href="http://sauron.org.ua/post/1254"> пятая ссылка</a>
+    </div>
 
 </body>
 
