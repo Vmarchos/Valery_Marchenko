@@ -1,0 +1,117 @@
+body{
+    margin:0px;
+    
+}
+.container{
+    background-image: url("ball.png");background-position: top right;background-repeat: repeat-y;
+    
+}
+.top{
+    background-color: #add8e6;
+    color: #0a0dfd;
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+    
+}
+.menu{
+    background-color: coral;
+    font-size: 20px;
+    
+    float: left;
+    width:180px;
+    
+    
+}
+h3{
+    padding-left: 15px;
+}
+h2{
+text-align: center;
+padding-top: 10px;
+}
+img{
+    float: left;
+    margin: 5px;
+}
+.text{
+    font-size: 15px;
+}
+.bot{
+  
+    background-color: #add8e6;
+    color: #0a0dfd;
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+}
+.content{
+    margin-left:200px;
+    }
+   .fix{
+    clear: both;
+   }
+
+   .line{
+    margin-top: -20px;
+   }
+   @media all and (max-width:840px) {
+    .menu{
+        height: 500px;
+        background-color: blueviolet;
+    }
+    .top, .bot{font-size: 30px;
+        background-color: aqua;
+
+    }
+    
+}
+@media all and ( max-width:640px) {
+    .menu { background-color: cornsilk;
+        height: 650px;
+        font-size: 14px;
+        
+    }
+    ul li{
+        padding-top: 30px;
+    }
+    .top,.bot{
+        font-size: 20px;
+    
+    }
+}
+@media all and (max-width:440px ) {
+    .menu{
+        float: left;
+        height: 150px;
+        width: 100%;
+        float: none;
+    
+    }
+    ul{
+        padding:5px;
+    }
+    ul li{
+        display: inline;
+        padding: 10px;
+        margin-left: -20px;
+        padding: 20px;
+    }
+    .content{
+        margin-left:-30px;
+
+    } 
+    h3{
+        padding-left:0px;
+        margin-bottom: -10px;
+    }
+    img{
+        width: 150px;
+    }
+    .text{
+        font-size: 10px;
+    }
+    h2{
+        font-size: 10px;
+    }
+}
