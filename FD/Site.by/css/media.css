@@ -1,0 +1,232 @@
+@media all and (max-width:1000px) {
+    .container {
+        width: 960px;
+        margin-left: 10px;
+    }
+
+    .top h3 {
+        position: absolute;
+        width: 76px;
+        height: 16px;
+        top: 18px;
+        left: 100px;
+
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 16px;
+        text-align: center;
+    }
+
+    .top>img {
+        float: left;
+        margin-left: 60px;
+        margin-top: 12px;
+        margin-right: 8px;
+    }
+
+    .top ul li {
+        float: right;
+        font-family: "Noto Sans";
+        font-style: "Light";
+        font-size: 14px;
+        vertical-align: Center;
+        list-style-type: none;
+        margin-left: 10px;
+        padding-top: 20px;
+        color: #727272;
+    }
+
+    .top ul li:first-child {
+        margin-right: 30px;
+    }
+
+    div.nav {
+        background-color: #EDEDED;
+        width: 960px;
+        height: 112px;
+    }
+
+    div.block_pink {
+        margin-left: 80px;
+        width: 150px;
+        background-color: #F46D69;
+        height: 112px;
+        float: left;
+    }
+
+    div.block_pink span {
+        width: 100px;
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        float: left;
+        margin-top: -40px;
+        margin-left: 60px;
+    }
+
+    div.nav input {
+        float: right;
+        border: none;
+        width: 300px;
+        height: 40px;
+        background: #FFFFFF;
+        border-radius: 4px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 40px;
+        color: #727272;
+        margin-right: 80px;
+    }
+
+    div.nav img:last-child {
+        float: right;
+        width: 268px;
+        height: 40px;
+        left: 948px;
+        top: 64px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        margin-right: 80px;
+
+
+    }
+
+    .nav_menu ul {
+        width: 272px;
+        height: 32px;
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        color: #F46D69;
+        float: left;
+        margin-left: 0px;
+        margin-top: 2.5px;
+    }
+
+    .menu_image {
+        float: left;
+        background-image: url("../img/content_img.png");
+        background-position: 25px;
+        width: 500px;
+        height: 485.95px;
+        margin-left: -306px;
+        margin-top: 498px;
+        background-repeat: no-repeat;
+    }
+
+    .menu_image button {
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 16px;
+        text-align: center;
+        color: #FFFFFF;
+        background-color: rgba(28, 28, 28, 0);
+        border: 1px solid #fff;
+        border-radius: 3px;
+        padding: 14px 30px 14px 30px;
+        margin-top: 22px;
+        margin-left: 94px;
+        float: left;
+    }
+
+    .menu_image>h3 {
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 34px;
+        color: #FFFFFF;
+        padding-top: 284px;
+        padding-left: 88px;
+
+    }
+
+    .menu_image img:nth-child(3) {
+        float: right;
+        width: 60px;
+        padding-top: 70px;
+        margin-right: -60px;
+    }
+
+    .menu_image img:nth-child(5) {
+        float: left;
+        margin-top: -130.5px;
+        margin-left: -220px;
+    }
+
+    .menu_image img:nth-child(6) {
+        margin-top: 139px;
+        margin-left: 20px;
+    }
+
+    .menu_image img:nth-child(7) {
+        padding-left: 20px;
+    }
+
+    .menu_image img:nth-child(8) {
+        padding-left: 20px;
+    }
+    .catalog_books {
+        background-color: #F8F8F8;
+        padding-bottom: 2550px;
+        margin-top: 46.5px;
+        height: 2520px;
+        padding-top: 1px;
+    
+    }
+    .catalog_books .selection-books .subscription {
+        width: 1296px;
+        height: 88px;
+        margin-top: 16px;
+        margin-left: -80px;
+        color: #FFFFFF;
+    
+    }
+    
+    .subscription p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 30px;
+        color: #727272;
+        float: left;
+        margin-left: 182px;
+        margin-top: 30px;
+    }
+    
+    .subscription button {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+        color: #727272;
+        background: #FFFFFF;
+        border: 1px solid #727272;
+        border-radius: 4px;
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        float: right;
+        margin-right: 350px;
+        margin-top: 22px;
+    }
+    .catalog_books .selection-books .top_books {
+        margin-top: 16px;
+        height: 752px;
+        background-image: url("../img/fon.svg");
+        
+    }
+
+
+
+
+
+
+
+}

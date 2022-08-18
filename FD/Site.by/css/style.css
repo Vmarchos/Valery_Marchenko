@@ -78,7 +78,6 @@ div.block_pink {
     margin-left: 80px;
     width: 244px;
     background-color: #F46D69;
-    ;
     height: 56px;
     float: left;
 }
@@ -107,7 +106,6 @@ div.block_pink span {
 
 div.nav>img {
     float: left;
-    float: left;
     margin: 20.46px 10.54px 18.54px 28.46px;
     width: 17px;
     height: 17px;
@@ -135,7 +133,7 @@ div.nav img:last-child {
     margin-right: 80px;
     margin-top: 8px;
     margin-bottom: 8px;
-    ;
+    
 }
 
 div.nav>span {
@@ -688,33 +686,39 @@ div.nav>span {
     font-size: 14px;
     line-height: 16px;
     color: #000000;
-    
+
 }
-.icon{
+
+.icon {
     float: right;
-   
+
 }
-.icon img{
+
+.icon img {
     padding-left: 15px;
     margin-top: 40px;
 
 }
-.icon img:last-child{
+
+.icon img:last-child {
     margin-right: 89px;
 }
 
-.contact .store img{
+.contact .store img {
     height: 29px;
     width: 100px;
 }
-.contact .store img:first-child{
+
+.contact .store img:first-child {
     margin-top: 52px;
     margin-right: 80px;
-    float:right;
+    float: right;
 }
-.contact .store img:last-child{
-    float:right;
+
+.contact .store img:last-child {
+    float: right;
     margin-top: 16px;
     margin-right: 80px;
 
 }
+
