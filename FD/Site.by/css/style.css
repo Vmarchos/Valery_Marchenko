@@ -225,6 +225,7 @@ div.nav>span {
     padding: 14px 30px 14px 30px;
     margin-top: 22px;
     margin-left: 94px;
+    float: left;
 }
 
 .menu_image img:nth-child(3) {
@@ -242,7 +243,7 @@ div.nav>span {
 .menu_image img:nth-child(5) {
     float: left;
     margin-top: -130.5px;
-    margin-left: 40px;
+    margin-left: -240px;
 }
 
 .menu_image img:nth-child(6) {
@@ -265,8 +266,11 @@ div.nav>span {
     background-color: #F8F8F8;
     padding-left: 80px;
     padding-right: 80px;
-    padding-bottom: 16px;
+    padding-bottom: 2550px;
     margin-top: 46.5px;
+    height: 2520px;
+    padding-top: 1px;
+
 }
 
 .catalog_books a {
@@ -312,16 +316,7 @@ div.nav>span {
 
 }
 
-.books {
-    height: 216px;
-    height: 368px;
-    width: 272px;
-    padding-top: 50px;
-    margin-right: 40px;
 
-
-
-}
 
 .info {
     padding-left: 16px;
@@ -373,10 +368,9 @@ div.nav>span {
 .catalog_books .selection-books>div {
     background-color: #FFFFFF;
     width: 272px;
-    height: 390px;
-    margin-top: 36px;
+    height: 368px;
     float: left;
-    margin-left: 16px;
+    margin-right: 12px;
     border-radius: 4px;
 }
 
@@ -395,4 +389,332 @@ div.nav>span {
     line-height: 18px;
     color: #000000;
     text-decoration: line-through;
+}
+
+.selection-books .books {
+    margin-top: 16px;
+    padding-top: 10px;
+
+}
+
+.selection-books .books:nth-child(7) {
+    background-color: #F46D69;
+    text-align: center;
+    color: #FEFEFE;
+    padding-top: 0px;
+
+}
+
+.selection-books .books:nth-child(7)>p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FEFEFE;
+    padding-top: 15.53px;
+
+}
+
+.selection-books .books:nth-child(7) p:last-child {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #FEFEFE;
+    padding-top: 16px;
+
+}
+
+.catalog_books .selection-books .subscription {
+    width: 1296px;
+    height: 88px;
+    margin-top: 16px;
+    margin-left: -80px;
+    color: #FFFFFF;
+
+}
+
+.subscription p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #727272;
+    float: left;
+    margin-left: 172px;
+    margin-top: 30px;
+}
+
+.subscription button {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #727272;
+    background: #FFFFFF;
+    border: 1px solid #727272;
+    border-radius: 4px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    float: right;
+    margin-right: 180px;
+    margin-top: 22px;
+}
+
+.catalog_books .selection-books .top_books {
+    margin-top: 16px;
+    height: 752px;
+    background-image: url("../img/fon.svg");
+}
+
+.top_books p {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #F9F9F8;
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-right: 35px;
+    text-align: center;
+}
+
+.top_books p:nth-child(2) {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    margin-left: 35px;
+    color: #F9F9F8;
+}
+
+.top_books .img img:first-child {
+    margin-left: 12px;
+    margin-top: 42px;
+}
+
+.top_books .img img:last-child {
+    margin-top: -263px;
+    margin-bottom: 60px;
+    margin-left: 16px;
+}
+
+.top_books button {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: rgba(28, 28, 28, 0);
+    border: 1px solid #fff;
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin-left: 85px;
+    margin-top: -22px;
+}
+
+.articles ul {
+    margin-top: 100px;
+    list-style-type: none;
+
+}
+
+.articles ul li:first-child {
+    float: left;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    margin-top: 10px;
+
+}
+
+.articles a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.articles li:last-child a {
+    float: left;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration-line: underline;
+    color: #000000;
+    margin-left: 24px;
+    margin-top: 16px;
+    margin-bottom: 1px;
+
+}
+
+.footer {
+    margin-left: 80px;
+    margin-top: -80px;
+}
+
+.footer .arrows img:nth-child(1) {
+    float: left;
+    margin-left: -56px;
+    margin-top: 225px;
+
+}
+
+.footer .arrows img:nth-child(2) {
+    float: right;
+    margin-top: 225px;
+    margin-right: 24px;
+}
+
+.article {
+    float: left;
+    margin-top: 36px;
+    margin-right: 16px;
+}
+
+.article p {
+    margin-top: 4px;
+}
+
+.article p:last-child {
+    width: 272px;
+    height: 144px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    margin-top: 8px;
+}
+
+.recommendation-books {
+    width: 1296px;
+    height: 544px;
+    background: #F8F8F8;
+    margin-top: 36px;
+}
+
+.recommendation-books ul {
+    margin-left: 80px;
+    padding-top: 40px;
+}
+
+.recommendation-books ul li {
+    list-style-type: none;
+    float: left;
+
+}
+
+.recommendation-books ul li a:first-child {
+    text-decoration: none;
+    color: inherit;
+    color: #000000;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+
+
+
+}
+
+.recommendation-books ul li:last-child a {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration-line: underline;
+    color: #000000;
+    margin-left: 24px;
+}
+
+.recommendation-books ul li:last-child {
+    margin-top: 4px;
+}
+
+.recommendation-books .selection-books>div {
+    background-color: #FFFFFF;
+    width: 272px;
+    height: 368px;
+    float: left;
+    margin-right: 12px;
+    border-radius: 4px;
+    margin-left: 80px;
+    margin-top: 24px;
+    margin-right: -68px;
+}
+
+.recommendation-books .arrows img {
+    float: right;
+    margin-top: 200px;
+    margin-right: 30px;
+}
+
+.contact ul {
+    margin-top: 40px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    margin-left: 80px;
+    float: left;
+    margin-right: 20px;
+}
+
+.contact ul li:first-child {
+    padding-top: 40px;
+}
+
+.contact ul li {
+    list-style-type: none;
+    padding-top: 12px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    
+}
+.icon{
+    float: right;
+   
+}
+.icon img{
+    padding-left: 15px;
+    margin-top: 40px;
+
+}
+.icon img:last-child{
+    margin-right: 89px;
+}
+
+.contact .store img{
+    height: 29px;
+    width: 100px;
+}
+.contact .store img:first-child{
+    margin-top: 52px;
+    margin-right: 80px;
+    float:right;
+}
+.contact .store img:last-child{
+    float:right;
+    margin-top: 16px;
+    margin-right: 80px;
+
 }
