@@ -45,21 +45,25 @@ body {
     margin-right: 8px;
 
 }
+.top .top_menu {
+    float: right;
+}
 
 .top ul li {
-    float: right;
+    float: left;
     font-family: "Noto Sans";
     font-style: "Light";
     font-size: 14px;
     vertical-align: Center;
     list-style-type: none;
-    margin-right: 32px;
+    margin-left: 32px;
     padding-top: 20px;
     color: #727272;
+    
 }
 
-.top ul li:first-child {
-    margin-right: 70px;
+.top ul li:last-child{
+    margin-right: 80px;
 }
 
 .top a {
