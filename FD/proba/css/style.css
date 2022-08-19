@@ -20,12 +20,12 @@ body {
 
 }
 
-.top {
+.top .container{
     height: 56px;
     line-height: 16px;
 }
 
-.top h3 {
+.top .container h3 {
     position: absolute;
     width: 76px;
     height: 16px;
@@ -46,11 +46,11 @@ body {
     margin-right: 8px;
 
 }
-.top .top_menu {
+.top .container .top_menu {
     float: right;
 }
 
-.top ul li {
+.top .container ul li {
     float: left;
     font-family: "Noto Sans";
     font-style: "Light";
@@ -63,22 +63,22 @@ body {
     
 }
 
-.top ul li:last-child{
+.top .container ul li:last-child{
     margin-right: 80px;
 }
 
-.top a {
+.top .container a {
     text-decoration: none;
     color: inherit;
 }
 
- div.nav {
+ div.nav   {
     background-color: #EDEDED;
     width: 1296px;
     height: 56px;
 }
 
-div.block_pink {
+.container  div.block_pink {
     margin-left: 80px;
     width: 244px;
     background-color: #F46D69;
@@ -86,7 +86,7 @@ div.block_pink {
     float: left;
 }
 
-div.block_pink>img {
+.container div.block_pink>img {
     display: inline;
     Width: 17px;
     Height: 10px;
@@ -95,7 +95,7 @@ div.block_pink>img {
     float: left;
 }
 
-div.block_pink span {
+.container div.block_pink span {
     width: 150px;
     height: 40px;
     font-family: 'Noto Sans';
@@ -108,14 +108,14 @@ div.block_pink span {
     margin: 8px 32px 8px -2px;
 }
 
-div.nav>img {
+div.nav .container >img {
     float: left;
     margin: 20.46px 10.54px 18.54px 28.46px;
     width: 17px;
     height: 17px;
 }
 
-div.nav input {
+div.nav .container input {
     border: none;
     width: 352px;
     height: 40px;
@@ -128,7 +128,7 @@ div.nav input {
     color: #727272;
 }
 
-div.nav img:last-child {
+div.nav .container img:last-child {
     float: right;
     width: 268px;
     height: 40px;
@@ -140,7 +140,7 @@ div.nav img:last-child {
     
 }
 
-div.nav>span {
+div.nav .container >span {
     float: left;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -153,7 +153,7 @@ div.nav>span {
     line-height: 16px;
 }
 
-.nav_menu ul {
+.container .nav_menu  ul {
     width: 272px;
     height: 32px;
     font-family: 'Noto Sans';
@@ -169,14 +169,14 @@ div.nav>span {
 
 
 
-.nav_menu li {
+.container .nav_menu li {
     margin-bottom: 8px;
     list-style-type: none;
 
 }
 
 
-.nav_menu ul li a {
+.container .nav_menu ul li a {
     text-decoration: none;
     color: #000000;
     width: 272px;
@@ -188,12 +188,12 @@ div.nav>span {
     line-height: 32px;
 }
 
-.nav_menu ul li:first-child a {
+.container .nav_menu ul li:first-child a {
     color: #F46D69;
 }
 
 
-.menu_image>h3 {
+.container .menu_image>h3 {
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 600;
@@ -205,7 +205,7 @@ div.nav>span {
 
 }
 
-.menu_image {
+.container .menu_image {
     background-image: url("../img/content_img.png");
     background-position: 25px;
     width: 895px;
@@ -215,7 +215,7 @@ div.nav>span {
     background-repeat: no-repeat;
 }
 
-.menu_image button {
+.container .menu_image button {
     font-weight: 600;
     font-size: 16px;
     line-height: 16px;
@@ -264,7 +264,7 @@ div.nav>span {
 
 
 
-.catalog_books {
+.catalog_books .container {
     background-color: #F8F8F8;
     padding-left: 80px;
     padding-right: 80px;
@@ -275,20 +275,20 @@ div.nav>span {
 
 }
 
-.catalog_books a {
+.catalog_books .container a {
     color: inherit;
 }
 
-.catalog_books li:first-child a {
+.catalog_books .container li:first-child a {
     text-decoration: none;
 
 }
 
-.catalog_books ul {
+.catalog_books .container ul {
     margin-top: 59px;
 }
 
-.catalog_books ul li {
+.catalog_books .container ul li {
     list-style-type: none;
     float: left;
     width: 122px;
@@ -302,7 +302,7 @@ div.nav>span {
 
 }
 
-.catalog_books li:last-child {
+.catalog_books .container li:last-child {
     width: 103px;
     height: 16px;
     font-family: 'Noto Sans';
