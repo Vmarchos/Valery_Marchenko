@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Noto Sans', sans-serif;
@@ -15,7 +15,7 @@ body {
     width: 1296px;
     height: 4548px;
     background: #FFFFFF;
-    margin: 0 auto;
+    margin: 0px auto;
 
 }
 
