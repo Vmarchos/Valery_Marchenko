@@ -986,7 +986,7 @@
         margin-top: 36px;
       }
       .recommendation-books ul {
-        margin-left: -3px;
+        margin-left: 0px;
         padding-top: 46px;
       }
       .recommendation-books ul li:last-child {
