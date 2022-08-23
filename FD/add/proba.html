@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,102 +6,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
         .container {
-            background: url("ball/bakground_1.png")10% top repeat-y;
-
-        }
-
-        .bottom_ball {
-            background: url("ball/bakground_1_bot.png")10% bottom no-repeat;
+            background: url("ball/bakground_1.png") top repeat-y;
 
         }
 
         .wrap {
+            background: url("ball/bakground_1_bot.png") bottom no-repeat;
+
+
+        }
+
+        .baners {
+            background: url("ball/bal.png")bottom right no-repeat;
+            background-position-x: right;
+            background-position-y: bottom;
+            background-repeat: no-repeat;
+            background-image: url("ball/bal.png");
             background-image: url("ball/bal.png"), url("ball/line_violent.png");
-            background-position: top 100% right 103px, right top;
-            background-repeat: no-repeat, no-repeat repeat;
+            background-position: bottom right 100px, top right -64px;
+            background-repeat: no-repeat, repeat-y;
         }
 
         .menu {
-            width: 20%;
+            background: url("ball/bal.png")no-repeat top right, url("ball/bal.png")top left no-repeat;
+
             float: left;
-            background: url('ball/bal.png') no-repeat top right;
+            width: 20%;
         }
 
         .baner {
+
+
             float: right;
             width: 200px;
-            float: right;
-            background-image: url("ball/bal.png");
-            background-position: left top;
-            background-repeat: no-repeat;
         }
 
-        .balls {
-            background: url("ball/bal.png") no-repeat top left, url("ball/bal.png") no-repeat top right, url("ball/bal.png") no-repeat bottom left, url("ball/bal.png") no-repeat bottom right;
-        }
-        .content{
-            margin-right: 200px;
+        .content {
+            background: url("ball/bak_cont.png");
             margin-left: 20%;
-            background: url("ball/bal.png") no-repeat top left, url("ball/bal.png") no-repeat top right, url("ball/bal.png") no-repeat bottom left, url("ball/bal.png") no-repeat bottom right;
+            margin-right: 200px;
+
+
         }
-        .clear{
+
+        .balls {}
+
+        .block_menu {
+
+            background-image: url("ball/wawaw.png");
+            background-position: top left;
+            background-repeat: repeat-y;
+
+        }
+
+
+
+
+
+
+
+        .fix {
             clear: both;
         }
     </style>
+</head>
 
-    </body>
+<body>
     <div class="container">
-        <div class="bottom_ball">
-            <div class="wrap">
+
+        <div class="wrap">
+
+            <div class="block_menu">
                 <div class="menu">
-
-                    <p>width20% width20% width20% width20% width20% width20% width20% width20% width20% width20%
-                        width20% width20% width20% width20% width20% width20% width20% width20% width20% width20%
-                        width20% width20% width20% width20% width20% width20% width20% width20% width20% width20%
-                        width20% width20% width20% width20% width20% width20% width20% width20% width20% width20%
-                        width20% width20% width20% width20% width20% width20% width20% width20% width20% width20%
-                        width20% width20% width20% width20% width20% width20% width20% width20% width20% width20%
-                        width20% width20% width20% width20% width20% </p>
-
+                    width 20% width 20% width 20% width 20% width 20% width 20% width 20% width 20% width 20% width
+                    20%
+                    width 20% width 20% width 20% width 20% width 20% width 20% width 20% width 20% width 20% width
+                    20%
+                    width 20% width 20% width 20% width 20% width 20% width 20% width 20% width 20% width 20% width
+                    20%
+                    width 20% width 20% width 20% width 20% width
+                    width 20% width 20% width 20% width 20% width 20% width 20%
 
                 </div>
+            </div>
+            <div class="baners">
+
+
                 <div class="baner">
-                    <p>200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px
-                        200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px
-                        200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px
-                        200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px
-                        200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px
-                        200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px
-                        200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px
-                        200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px
-                        200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px
-                        200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px
-                        200px</p>
+                    200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px
+                    200px
+                    200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px
+                    200px 200px
+                    200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px
+                    200px 200px
+                    200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px
+                    200px 200px
 
                 </div>
+
                 <div class="balls">
                     <div class="content">
-                        
-                      <p> контент контент  контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент</p>
-                      <div class="clear">
-
-                      </div>
-                        
-
+                        контент контент контент контент контент контент контент контент контент контент контент контент
+                        контент контент контент контент контент контент контент контент контент контент контент контент
+                        контент контент контент контент контент контент контент контент контент контент контент контент
+                        контент контент контент контент контент контент контент контент контент контент контент контент
+                        контент контент контент контент контент контент контент контент контент контент контент контент
+                        контент контент контент контент контент контент контент контент контент контент контент контент
+                        контент контент контент контент контент контент контент контент контент контент контент контент
+                        контент контент контент контент контент контент контент контент контент контент контент контент
+                        контент контент контент контент контент контент контент контент контент контент контент контент
+                        контент контент контент контент контент контент контент контент контент
+                        <div class="fix"></div>
                     </div>
+
 
                 </div>
 
+
+
             </div>
-
-
         </div>
-
     </div>
+
+
+
+
+</body>
 
 </html>

@@ -1,10 +1,8 @@
 @media all and (max-width:1000px) {
-    body{
-        width: 960px;
-    }
+   
     .container {
         width: 960px;
-        margin: 0px auto;
+        margin: 0 auto;
     }
 
     .top h3 {
@@ -389,7 +387,7 @@
 @media all and (max-width:860px) {
     .container {
         width: 840px;
-        margin: 0px auto;
+        margin: 0 auto;
     }
 
     .top ul li {
