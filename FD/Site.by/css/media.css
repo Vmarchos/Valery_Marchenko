@@ -1191,14 +1191,16 @@
   }
 
   .contact .store img:first-child {
-    margin-top: 55px;
+    margin-top: 49px;
     margin-right: -84px;
     float: right;
+    margin-bottom: 20px;
   }
+  
 
   .contact .store img:last-child {
     float: right;
-    margin-top: 56px;
+    margin-top: 49px;
     margin-right: -207px;
   }
 
