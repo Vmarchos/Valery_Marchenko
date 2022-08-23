@@ -1154,16 +1154,7 @@
     display: none;
   }
 
-  .recommendation-books ul li a:first-child {
-    text-decoration: none;
-    color: inherit;
-    color: #000000;
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 30px;
-  }
+ 
 
 
   .recommendation-books .selection-books > div {
@@ -1183,7 +1174,7 @@
 
   .icon img {
     padding-left: 23px;
-    margin-top: 18px;
+    margin-top: 11px;
   }
 
   .icon img:last-child {
@@ -1203,6 +1194,11 @@
     margin-top: 49px;
     margin-right: -207px;
   }
+  .contact ul li:last-child {
+    margin-bottom: 10px;
+
+}
+
 
 
 

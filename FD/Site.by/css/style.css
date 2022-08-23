@@ -693,6 +693,10 @@ div.nav>span {
     color: #000000;
 
 }
+.contact ul li:last-child {
+    margin-bottom: 50px;
+
+}
 
 .icon {
     float: right;
