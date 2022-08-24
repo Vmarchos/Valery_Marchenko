@@ -55,6 +55,16 @@ img{
    .line{
     margin-top: -20px;
    }
+   .block {
+    padding: 10px;
+    background-color: lightgreen;
+    border: solid green 1px;
+    width: 90px;
+    text-align: center;
+    position: fixed;
+    top: 20px;
+    right: 21px;
+  }
    @media all and (max-width:840px) {
     .menu{
         height: 500px;

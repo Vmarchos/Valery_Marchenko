@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            margin: 15px;
+        }
+
+        .text {
+            float: left;
+        }
+
+        .action {
+            margin-left: 200px;
+        }
+
+        .radio-box {
+            display: inline;
+        }
+
+        .action.one input {
+            width: 100%;
+        }
+
+        textarea {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .chek-box {
+            display: none;
+
+        }
+
+        .action input+label {
+            width: 66px;
+            height: 28px;
+            background-color: red;
+            display: inline-block;
+            border-radius: 50px;
+        }
+
+        .action input+label::before {
+            content: "вкл";
+            width: 26px;
+            height: 25px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            left: 224px;
+            top: 168px;
+        }
+
+        .action input:checked+label {
+            background-color: green;
+        }
+
+        .action input:checked+label::before {
+            content: "вык";
+            left: 260px;
+            width: 26px;
+            height: 25px;
+            top: 167px;
+
+        }
+
+
+        @media all and (max-width: 1200px) {
+            .text {
+                float: none;
+            }
+
+            .action {
+                margin-left: 0px;
+            }
+
+            .coment .text {
+                float: left;
+            }
+
+            .radio-box {
+                display: block;
+            }
+
+            .action input+label {
+                width: 66px;
+                height: 28px;
+                background-color: red;
+                display: inline-block;
+                border-radius: 50px;
+                margin-left: 20px;
+            }
+
+            .action input+label::before {
+                content: "вкл";
+                width: 26px;
+                height: 25px;
+                background-color: white;
+                border-radius: 50%;
+                position: absolute;
+                left: 200px;
+                top: 260px;
+            }
+
+            .action input:checked+label::before {
+                content: "вык";
+                left: 238px;
+                width: 26px;
+                height: 25px;
+                top: 259px;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</p>
+        <div class="content">
+            <form action="#" method="post">
+
+                <div class="text">
+                    <label for="t-s">Название статьи:</label>
+                </div>
+                <div class="action one">
+                    <input type="text" name="top-search" id="t-s">
+                </div>
+                <br>
+                <div class="category">
+                    <div class="text"> Рубрика:
+                    </div>
+                    <div class="action">
+                        <select name="program-cate" id="">
+                            <option value="programm">программирование</option>
+                            <option value="medicine">медицина</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <div class="radio">
+                    <div class="text">
+                        Публикация:
+                    </div>
+                    <div class="action">
+                        <div class="radio-box">
+
+                            <input type="radio" name="radio" value="site">на сайте
+
+                        </div>
+                        <div class="radio-box">
+                            <input type="radio" name="radio" value="magazine">в журнале
+                        </div>
+                        <div class="radio-box">
+                            <input type="radio" name="radio" value="site-and-magazine">на сайте и в журнале
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <br>
+                <div class="coment">
+                    <div class="text">
+                        разрешить коментарий
+                    </div>
+                    <div class="action">
+
+                        <input type="checkbox" name="chek" value="agree" id="c-box" class="chek-box">
+                        <label for="c-box"></label>
+
+                    </div>
+                </div>
+                <br>
+                <div class="area">
+                    <label for="t-a"> Текст статьи:</label>
+
+                </div>
+                <br>
+                <textarea name="text-area" id="t-a" cols="1" rows="1"></textarea>
+                <br>
+                <input type="submit" value="отправить">
+
+
+
+
+
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
