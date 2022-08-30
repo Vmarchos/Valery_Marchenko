@@ -1,0 +1,109 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+
+}
+
+.container {
+    display: flex;
+    background-image: url("ball.png");
+    background-position: top right;
+    background-repeat: repeat-y;
+    flex-direction: row;
+
+}
+
+.top {
+    background-color: #add8e6;
+    color: #0a0dfd;
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+}
+
+.bot {
+
+    background-color: #add8e6;
+    color: #0a0dfd;
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+}
+
+.menu {
+    background-color: coral;
+    font-size: 20px;
+    padding: 20px;
+
+
+
+}
+
+.block {
+    padding: 10px;
+    background-color: lightgreen;
+    border: solid green 1px;
+    width: 90px;
+    text-align: center;
+    position: fixed;
+    top: 20px;
+    right: 21px;
+}
+
+.content {
+    padding: 10px 10px 10px 40px;
+
+
+}
+
+h2 {
+    text-align: center;
+}
+
+.content img {
+    float: left;
+    margin: 90px 30px 0px 0px;
+
+}
+
+.text {
+    font-size: 20px;
+}
+
+@media all and (max-width:500px) {
+    .container {
+        display: flex;
+        background-image: url("ball.png");
+        background-position: top right;
+        background-repeat: repeat-y;
+        flex-direction: column-reverse;
+
+    }
+
+    .menu {
+        background-color: white;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-left: 20px;
+
+    }
+
+    .menu ul {
+        display: flex;
+        flex-flow: row wrap;
+        list-style: none;
+        justify-content: flex-start;
+        margin-left: -39px;
+        margin-top: -25px;
+        padding-right: 45px;
+    }
+
+    .menu ul li {
+        margin-right: 10px;
+    }
+
+}
