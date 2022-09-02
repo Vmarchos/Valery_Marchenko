@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .redblock{
+            background-color: red;
+            height: 50px;
+            width: 50px;
+            animation-name: block1;
+            transition: 3s;
+
+        }
+        .redblock:hover{
+            background-color: green;
+            width: 100px;
+            transform: rotate(-180deg);
+        }
+        .blueblock{
+            background-color: blue;
+            height: 50px;
+            width: 50px;
+            animation-name: block2;
+            transition: 3s;
+            
+        }
+        .blueblock:hover{
+            background-color: gold;
+            width: 100px;
+            transform: rotate(-180deg);
+            height: 10px;
+        }
+        .orangeblock{
+            background-color: orange;
+            height: 50px;
+            width: 50px;
+            animation-name: block3;
+            animation: block3 5s infinite ease-in-out;
+        }
+        @keyframes block3 {
+            0%{transform: scale(-1,5);}
+            25%{transform: rotate(45deg);}
+            35%{transform: rotate(-390deg);}
+            50%{transform: translate(50px);}
+            75%{transform: translate(100px);}
+            100%{transform: translate(-240px); background-color:green;}
+            
+           
+            
+            
+        }
+        .content{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            height:750px;
+            background-color: grey;
+           
+            
+        }
+        .content:hover .redblock{
+            background-color: green;
+            width: 100px;
+            transform: rotate(-180deg);
+        }
+        .content:hover .blueblock{
+            background-color: gold;
+            width: 100px;
+            transform: rotate(-180deg);
+            
+            
+        }
+
+        
+        .content>div{
+            margin-right: 10px;
+            margin-left: 10px;
+           
+        }
+       
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="redblock"></div>
+            <div class="blueblock"></div>
+            <div class="orangeblock"></div>
+            
+        </div>
+    </div>
+</body>
+</html>

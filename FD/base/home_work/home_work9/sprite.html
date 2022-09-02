@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .spider{
+            margin-left: auto;
+            margin-right: auto;
+            height: 60px;
+            width: 85px;
+            background-image: url("spider.png");
+            margin-top: 200px;
+            animation: anim 1s steps(6) infinite;
+            animation-name: spider;
+        }
+        @keyframes spider{
+            from {
+                background: url("spider.png")0 0;
+            }
+            to {background: url("spider.png") -538px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="spider"></div>
+    
+</body>
+</html>
