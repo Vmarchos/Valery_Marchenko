@@ -768,10 +768,11 @@ form input:last-child {
   height: 40px;
   border: 0.5px solid #000000;
   border-radius: 0 4px 4px 0;
-  margin-left: -10px; }
+  margin-left: -10px;
+  background-color: white; }
 
 .subscription .container p {
-  margin-top: 69px;
+  margin-top: 34px;
   margin-right: 32px;
   font-family: 'Roboto';
   font-style: normal;
@@ -781,7 +782,7 @@ form input:last-child {
   color: #000000; }
 
 .subscription .container form {
-  margin-top: 69px; }
+  margin-top: 34px; }
 
 .footer {
   height: 340px;
@@ -857,5 +858,37 @@ form input:last-child {
   margin-top: 20px; }
   .footer .container .connection ul:last-child li {
     padding-bottom: 8px; }
+
+.footer .catalog_2 ul {
+  margin-top: 32px;
+  margin-left: 112px;
+  padding-bottom: 12px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000; }
+  .footer .catalog_2 ul li {
+    padding-bottom: 8px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px; }
+
+.footer .app ul {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  margin-top: 32px;
+  margin-left: 220px; }
+.footer .app img:nth-child(2) {
+  margin-top: 28px;
+  margin-left: 222px;
+  margin-right: 16px; }
 
 /*# sourceMappingURL=style.css.map */

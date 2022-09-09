@@ -1027,12 +1027,13 @@ form input:last-child {
     border: 0.5px solid #000000;
     border-radius: 0 4px 4px 0;
     margin-left: -10px;
+    background-color: white;
 
 
 }
 
 .subscription .container p {
-    margin-top: 69px;
+    margin-top: 34px;
     margin-right: 32px;
     font-family: 'Roboto';
     font-style: normal;
@@ -1043,7 +1044,7 @@ form input:last-child {
 }
 
 .subscription .container form {
-    margin-top: 69px;
+    margin-top: 34px;
 }
 
 .footer {
@@ -1144,5 +1145,53 @@ form input:last-child {
             padding-bottom: 8px;
         }
 
+    }
+}
+
+.footer .catalog_2 {
+    ul {
+        margin-top: 32px;
+        margin-left: 112px;
+        padding-bottom: 12px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+
+
+        li {
+            padding-bottom: 8px;
+
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+
+
+        }
+    }
+}
+
+.footer .app {
+    ul {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+        margin-top: 32px;
+        margin-left: 220px;
+
+
+    }
+
+    img:nth-child(2) {
+        margin-top: 28px;
+        margin-left: 222px;
+        margin-right: 16px;
     }
 }
