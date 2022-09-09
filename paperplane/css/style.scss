@@ -1013,11 +1013,13 @@ h2 {
 }
 
 form input:first-child {
-    width: 461px;
+    width:324px;
     height: 40px;
     background: #FFFFFF;
     border: 0.5px solid #000000;
     border-radius: 4px;
+    
+
 
 }
 
@@ -1041,6 +1043,7 @@ form input:last-child {
     font-size: 16px;
     line-height: 24px;
     color: #000000;
+    margin-left: 90px;
 }
 
 .subscription .container form {
@@ -1184,14 +1187,14 @@ form input:last-child {
         line-height: 20px;
         color: #000000;
         margin-top: 32px;
-        margin-left: 220px;
+        margin-left: 155px;
 
 
     }
 
     img:nth-child(2) {
         margin-top: 28px;
-        margin-left: 222px;
+        margin-left: 155px;
         margin-right: 16px;
     }
 }
