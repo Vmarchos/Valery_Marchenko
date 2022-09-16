@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            width: 350px;
+            height: 50px;
+            margin: 3px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+
+    <input type="button" value="ввод информации о стране" onclick="addCountry()">
+    <input type="button" value="получение информации о стране" onclick="getInfoCountry()">
+    <input type="button" value="перечень всех стран" onclick="getAllCountry()">
+    <input type="button" value="удаление информации о стране" onclick="delCountryInfo()">
+
+
+
+
+
+    <script>
+        var countrysN = {};
+        var countrysL = [];
+
+        function addCountry() {
+            alert('Введите страну и её столицу');
+            var cName = prompt('Введите страну');
+            var capital = prompt('Введите столицу');
+            nCountry(cName, capital)
+
+        }
+
+
+        function nCountry(title, cCapital) {
+            countrysN[title] = cCapital;
+            countrysL.push(title);
+
+        }
+
+        function delCountryInfo(title) {
+            var title = prompt('Введите название страны:');
+            delete countrysN[title];
+
+            var del = countrysL.indexOf(title, 0);
+            countrysL.splice(del, 1);
+
+        }
+        function getInfoCountry(title) {
+            var title = prompt('введите название страны')
+            if (title in countrysN == false) {
+                alert('нет информации о стране,' + '\n' + 'пожалуйста проверьте список всех стран и выберите нужную')
+            }
+            else (
+                console.log('Столица:' + countrysN[title])
+            )
+        }
+        function getAllCountry() {
+            console.log('Countries list: ');
+
+            for (var i = 0; i < countrysL.length; i++) {
+                console.log(countrysL[i]);
+            }
+        }
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
