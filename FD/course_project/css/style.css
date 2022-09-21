@@ -1,0 +1,784 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400; }
+
+button {
+  cursor: pointer; }
+
+.header {
+  background: #2D2D2D;
+  height: 95px; }
+  .header .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .header .container img:first-child {
+      margin-top: 6.86px;
+      margin-right: 25.32px; }
+    .header .container > div p {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      color: #FFFFFF;
+      margin-top: 29px;
+      margin-right: 111px; }
+    .header .container div:nth-child(3) {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-item-align: center;
+          align-self: center; }
+      .header .container div:nth-child(3) img {
+        margin: 0 10px 0 0; }
+      .header .container div:nth-child(3) span {
+        margin-right: 20px;
+        -ms-flex-item-align: center;
+            align-self: center;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        color: #FFFFFF; }
+      .header .container div:nth-child(3) span:nth-child(4) {
+        margin-right: 44px; }
+      .header .container div:nth-child(3) > input {
+        width: 205px;
+        height: 43px;
+        border: 1px solid #FFBF1D;
+        background: #2D2D2D;
+        -ms-flex-item-align: center;
+            align-self: center;
+        margin-right: 44px;
+        font-family: 'PT Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        color: #FFFFFF; }
+      .header .container div:nth-child(3) ul li {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        color: #FFFFFF;
+        list-style-type: none;
+        padding-top: 10px; }
+      .header .container div:nth-child(3) ul li:last-child {
+        padding-bottom: 7.5px; }
+
+.container {
+  width: 1296px;
+  margin: 0 auto; }
+
+.nav {
+  height: 76px;
+  background: #F3F3F3; }
+  .nav ul {
+    margin-top: 25px; }
+    .nav ul li {
+      list-style-type: none;
+      display: inline;
+      padding-right: 30px; }
+      .nav ul li a {
+        text-decoration: none;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        color: #000000; }
+    .nav ul li:last-child {
+      margin-right: 215px; }
+  .nav .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .nav .container > div {
+      margin-top: 20px; }
+      .nav .container > div form input {
+        width: 270px;
+        height: 30px;
+        border: 1px solid rgba(45, 45, 45, 0.6); }
+
+.baners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 675px;
+  background-color: #F3F3F3;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .baners > div:first-child {
+    background-image: url(../img/фон\ для\ оффера.jpg);
+    height: 600px;
+    width: 788px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .baners > div:first-child > div:last-child {
+      position: absolute;
+      -ms-flex-item-align: end;
+      align-self: flex-end;
+      margin-top: 534px;
+      width: 66px;
+      height: 66px;
+      border: 1px solid #F3F3F3;
+      border-radius: 0px; }
+      .baners > div:first-child > div:last-child img {
+        width: 9.16px;
+        height: 17.06px;
+        margin-top: 24px;
+        margin-left: 25px;
+        background: none; }
+    .baners > div:first-child > h2 {
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+      width: 591px;
+      height: 125px;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 108px;
+      text-transform: uppercase;
+      color: rgba(196, 196, 196, 0.5);
+      opacity: 0.5;
+      -webkit-transform: rotate(-90deg);
+              transform: rotate(-90deg);
+      margin-left: -250px;
+      margin-top: -190px; }
+    .baners > div:first-child img {
+      width: 264px;
+      height: 5px;
+      background: #FCB427;
+      -ms-flex-item-align: center;
+          align-self: center;
+      margin-bottom: 20px;
+      margin-top: 103px;
+      margin-left: -240px; }
+    .baners > div:first-child > div {
+      -ms-flex-item-align: center;
+          align-self: center;
+      margin-left: 0px; }
+      .baners > div:first-child > div h1 {
+        font-family: 'PT Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 44px;
+        color: #2D2D2D; }
+      .baners > div:first-child > div > p {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: #2D2D2D;
+        margin-top: 30px;
+        line-height: 25px; }
+      .baners > div:first-child > div > input {
+        width: 219px;
+        height: 50px;
+        background: #FCB427;
+        font-family: 'PT Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        color: #FFFFFF;
+        margin-top: 30px;
+        margin-right: 28px; }
+      .baners > div:first-child > div > input + input {
+        border: 1px solid #2D2D2D;
+        background: none;
+        font-family: 'PT Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        color: #2D2D2D; }
+  .baners > div:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-image: url(../img/Изображение.jpg);
+    height: 600px;
+    background-size: 1460px 100%;
+    height: 600px;
+    width: 788px;
+    background-position-x: right; }
+    .baners > div:last-child > div {
+      position: absolute;
+      -ms-flex-item-align: end;
+      align-self: flex-end;
+      width: 66px;
+      height: 66px;
+      border: 1px solid #F3F3F3;
+      border-radius: 0px;
+      background: #FCB427; }
+      .baners > div:last-child > div img {
+        width: 9.16px;
+        height: 17.06px;
+        margin-top: 24px;
+        margin-left: 25px;
+        background: none; }
+    .baners > div:last-child h2 {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 100px;
+      line-height: 124.19%;
+      text-transform: uppercase;
+      opacity: 0.3;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+      margin-left: 230px;
+      margin-bottom: -60px;
+      color: white; }
+
+.rent {
+  height: 565px;
+  background: #FFFFFF; }
+  .rent .container h3 {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 141.69%;
+    margin-top: 51px; }
+    .rent .container h3 span {
+      font-family: 'PT Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 141.69%;
+      color: #FF971D; }
+  .rent .container > div {
+    margin-top: 55px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .rent .container > div > div {
+      margin-right: 72px; }
+      .rent .container > div > div > img {
+        margin-top: -10px;
+        margin-left: -70px; }
+    .rent .container > div > div + div p {
+      font-family: 'PT Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 33px;
+      line-height: 142.19%;
+      color: #2D2D2D; }
+    .rent .container > div > div + div p:nth-child(4) {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 156.69%;
+      color: #2D2D2D;
+      margin-right: 150px; }
+    .rent .container > div > div + div input {
+      width: 219px;
+      height: 50px;
+      background: #FCB427;
+      font-family: 'PT Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 141.69%;
+      color: #FFFFFF;
+      margin-top: 32px; }
+    .rent .container > div > div + div h2 {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 113px;
+      line-height: 151.69%;
+      text-transform: uppercase;
+      color: rgba(211, 208, 208, 0.2);
+      margin-bottom: -90px;
+      margin-top: -90px;
+      margin-left: 134px; }
+  .rent .controls-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .rent .controls-center > div:first-child {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-item-align: end;
+          align-self: end;
+      width: 40px;
+      height: 40px;
+      border: 2px solid #FF971D;
+      margin-top: 34px;
+      margin-right: 181px; }
+      .rent .controls-center > div:first-child > button {
+        margin-left: -14px;
+        border: none;
+        -ms-flex-item-align: center;
+            align-self: center;
+        background: none; }
+        .rent .controls-center > div:first-child > button img {
+          width: 30px;
+          height: 10px;
+          background: none;
+          cursor: pointer; }
+    .rent .controls-center > button {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-item-align: center;
+          align-self: center;
+      margin-top: -24px;
+      background: none;
+      border: none; }
+      .rent .controls-center > button > img {
+        margin-left: 220px;
+        cursor: pointer; }
+  .rent .scrollbar {
+    margin: 26px 0 1em 0;
+    height: 4px;
+    background: #ccc;
+    line-height: 0;
+    width: 556px; }
+    .rent .scrollbar .handle {
+      -webkit-transform: translateZ(0px) translateX(0px);
+              transform: translateZ(0px) translateX(0px);
+      width: 71px;
+      height: 100%;
+      background: #292a33;
+      cursor: pointer; }
+      .rent .scrollbar .handle .mousearea {
+        position: absolute;
+        top: -9px;
+        left: 0;
+        width: 100%;
+        height: 20px; }
+
+.rent_2 {
+  height: 744px;
+  background: #E5E5E5; }
+  .rent_2 .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .rent_2 .container > div:first-child h2 {
+      font-family: 'PT Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 141.69%;
+      color: #424242;
+      margin-top: 182px; }
+    .rent_2 .container > div:first-child button {
+      width: 219px;
+      height: 50px;
+      background: #FCB427;
+      font-family: 'PT Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 141.69%;
+      color: #FFFFFF;
+      margin-top: 30px; }
+
+.rent_2 .container > div:first-child > div {
+  margin-top: 65px;
+  width: 583px;
+  margin-right: 92px; }
+  .rent_2 .container > div:first-child > div p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 156.69%;
+    color: #2D2D2D;
+    padding-bottom: 15px; }
+.rent_2 .container > div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 300px; }
+  .rent_2 .container > div:last-child > div {
+    margin-left: 100px;
+    text-align: center; }
+    .rent_2 .container > div:last-child > div p {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 142.19%;
+      color: #2D2D2D;
+      padding-top: 21px; }
+    .rent_2 .container > div:last-child > div > img:first-child {
+      position: absolute;
+      margin-left: 27px; }
+    .rent_2 .container > div:last-child > div > img:nth-child(2) {
+      position: relative; }
+  .rent_2 .container > div:last-child > div:nth-child(2) {
+    margin-left: 120px; }
+  .rent_2 .container > div:last-child > div:nth-child(3) {
+    margin-left: 80px;
+    margin-top: 21px; }
+  .rent_2 .container > div:last-child > div:nth-child(4) {
+    margin-left: 70px;
+    margin-top: 29px; }
+
+.black-line {
+  height: 300px;
+  background-color: #2D2D2D; }
+  .black-line .black-line-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 300px;
+    background: url(../img/black_line-up.svg) top repeat-x, url(../img/black_line-down.svg) bottom repeat-x; }
+    .black-line .black-line-wrapper .container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .black-line .black-line-wrapper .container > div {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        .black-line .black-line-wrapper .container > div > span {
+          font-family: 'PT Sans';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 70px;
+          line-height: 75.5%;
+          text-align: center;
+          letter-spacing: 0.07em;
+          color: transparent;
+          -webkit-text-stroke: 2px white; }
+        .black-line .black-line-wrapper .container > div > p {
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 142.19%;
+          text-align: center;
+          color: #FFFFFF;
+          margin-top: 15px; }
+
+.black-line .grey-line {
+  height: 100px;
+  background: #E5E5E5; }
+
+.relize-proect {
+  height: 1043px;
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .relize-proect .container h2 {
+    margin-top: 50px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 141.69%;
+    color: #2D2D2D; }
+
+.equipment-catalog {
+  background: #E5E5E5;
+  height: 1050px; }
+  .equipment-catalog .container h2 {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 141.69%;
+    color: #2D2D2D;
+    padding-top: 120px; }
+  .equipment-catalog .container .slidecontainer {
+    width: 100%;
+    padding-top: 20px;
+    margin-right: 90px; }
+    .equipment-catalog .container .slidecontainer .slider {
+      -webkit-appearance: none;
+      width: 123px;
+      height: 4px;
+      background: grey;
+      outline: none;
+      opacity: 1;
+      -webkit-transition: .2s;
+      -webkit-transition: opacity .2s;
+      transition: opacity .2s; }
+    .equipment-catalog .container .slidecontainer .slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 25px;
+      height: 25px;
+      cursor: pointer; }
+    .equipment-catalog .container .slidecontainer .slider::-moz-range-thumb {
+      width: 34px;
+      height: 4px;
+      background: black;
+      cursor: pointer;
+      border: none; }
+  .equipment-catalog .container .controls-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .equipment-catalog .container .controls-center > div:first-child {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-item-align: end;
+          align-self: end;
+      width: 40px;
+      height: 40px;
+      border: 2px solid #FF971D;
+      margin-top: 34px;
+      margin-right: 93px; }
+      .equipment-catalog .container .controls-center > div:first-child > button {
+        margin-left: -14px;
+        border: none;
+        -ms-flex-item-align: center;
+            align-self: center;
+        background: none; }
+        .equipment-catalog .container .controls-center > div:first-child > button img {
+          width: 30px;
+          height: 10px;
+          background: none;
+          cursor: pointer; }
+    .equipment-catalog .container .controls-center > button {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-item-align: center;
+          align-self: center;
+      margin-top: -24px;
+      background: none;
+      border: none; }
+      .equipment-catalog .container .controls-center > button > img {
+        margin-left: -80px;
+        cursor: pointer; }
+
+.equipment-catalog .container > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+.equipment-catalog .catalog-cars {
+  overflow: hidden; }
+  .equipment-catalog .catalog-cars > div:first-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .equipment-catalog .catalog-cars > div:first-child .car-img {
+      width: 370px;
+      height: 590px;
+      background-color: white;
+      margin-right: 10px;
+      margin-top: 21px; }
+      .equipment-catalog .catalog-cars > div:first-child .car-img .name-car {
+        height: 90px;
+        background: url(../img/left-item.svg) left no-repeat, url(../img/right-item.svg) right no-repeat;
+        border-bottom: 1px solid rgba(252, 209, 39, 0.5);
+        text-align: start; }
+        .equipment-catalog .catalog-cars > div:first-child .car-img .name-car > p {
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 25px;
+          line-height: 142.19%;
+          color: #2D2D2D;
+          margin-left: 26px;
+          margin-top: -4px;
+          padding-top: 10px; }
+      .equipment-catalog .catalog-cars > div:first-child .car-img .characteristics {
+        text-align: start; }
+        .equipment-catalog .catalog-cars > div:first-child .car-img .characteristics p:first-child {
+          padding-top: 21px; }
+          .equipment-catalog .catalog-cars > div:first-child .car-img .characteristics p:first-child > span:first-child {
+            margin-left: 12px; }
+        .equipment-catalog .catalog-cars > div:first-child .car-img .characteristics p {
+          margin-left: 26px;
+          padding-bottom: 6px;
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 156.69%;
+          color: #2D2D2D; }
+          .equipment-catalog .catalog-cars > div:first-child .car-img .characteristics p > span {
+            margin-left: 46px; }
+        .equipment-catalog .catalog-cars > div:first-child .car-img .characteristics p:last-child {
+          font-family: 'PT Sans';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 141.69%;
+          color: #2D2D2D; }
+          .equipment-catalog .catalog-cars > div:first-child .car-img .characteristics p:last-child img {
+            width: 18px;
+            height: 10px;
+            margin-left: 24px;
+            cursor: pointer; }
+      .equipment-catalog .catalog-cars > div:first-child .car-img .arends button {
+        margin-left: 26px;
+        width: 311px;
+        height: 50px;
+        background: #FCB427;
+        border: none;
+        font-family: 'PT Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 141.69%;
+        color: #FFFFFF;
+        margin-top: 8px; }
+    .equipment-catalog .catalog-cars > div:first-child .car-img:first-child {
+      width: 370px;
+      height: 590px;
+      background-color: white;
+      margin-right: 10px;
+      margin-left: 12px; }
+.equipment-catalog > div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px; }
+  .equipment-catalog > div:last-child button {
+    width: 200px;
+    height: 50px;
+    border: 1px solid #FCB427;
+    background: white;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 141.69%;
+    color: #2D2D2D; }
+
+.black-line-2 {
+  height: 493px;
+  background-color: #2D2D2D; }
+  .black-line-2 .black-line-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 493px;
+    background: url(../img/black_line-up.svg) top repeat-x, url(../img/black_line-down.svg) bottom repeat-x; }
+    .black-line-2 .black-line-wrapper .container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .black-line-2 .black-line-wrapper .container h2 {
+        font-family: 'PT Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 141.69%;
+        color: #FFFFFF;
+        margin-top: 61px; }
+      .black-line-2 .black-line-wrapper .container > div {
+        margin-top: 25px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .black-line-2 .black-line-wrapper .container > div > div {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column; }
+          .black-line-2 .black-line-wrapper .container > div > div > p:first-child {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 64px;
+            line-height: 100%;
+            color: #FFFFFF;
+            padding-top: 21px;
+            margin-left: 0px; }
+          .black-line-2 .black-line-wrapper .container > div > div > p:last-child {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 156.69%;
+            color: #FFFFFF;
+            text-align: center; }
+        .black-line-2 .black-line-wrapper .container > div > div:first-child {
+          background: url(../img/01.svg) no-repeat;
+          width: 135px;
+          height: 96px;
+          margin-left: 57px; }
+          .black-line-2 .black-line-wrapper .container > div > div:first-child > p:last-child {
+            width: 270px;
+            margin-left: -57px;
+            margin-top: 23px; }
+        .black-line-2 .black-line-wrapper .container > div > div:nth-child(2) {
+          background: url(../img/02.svg) no-repeat;
+          width: 135px;
+          height: 96px;
+          margin-left: 182px; }
+          .black-line-2 .black-line-wrapper .container > div > div:nth-child(2) > p:last-child {
+            width: 270px;
+            margin-left: -57px;
+            margin-top: 23px; }
+        .black-line-2 .black-line-wrapper .container > div > div:nth-child(3) {
+          background: url(../img/03.svg) no-repeat;
+          width: 135px;
+          height: 96px;
+          margin-left: 182px; }
+          .black-line-2 .black-line-wrapper .container > div > div:nth-child(3) > p:last-child {
+            width: 270px;
+            margin-left: -57px;
+            margin-top: 23px; }
+        .black-line-2 .black-line-wrapper .container > div > div:nth-child(4) {
+          background: url(../img/04.svg) no-repeat;
+          width: 135px;
+          height: 96px;
+          margin-left: 182px; }
+          .black-line-2 .black-line-wrapper .container > div > div:nth-child(4) > p:last-child {
+            width: 270px;
+            margin-left: -57px;
+            margin-top: 23px; }
+
+/*# sourceMappingURL=style.css.map */
