@@ -957,6 +957,9 @@ button {
         height: 493px;
         background: url(../img/black_line-up.svg) top repeat-x,
             url(../img/black_line-down.svg) bottom repeat-x;
+        padding-bottom: 50px;
+        border-bottom: 50px solid #e5e5e5;
+
 
         .container {
             display: flex;
@@ -969,14 +972,15 @@ button {
                 font-size: 40px;
                 line-height: 141.69%;
                 color: #FFFFFF;
-                margin-top: 61px;
+                margin-top: 41px;
             }
 
             >div {
-                margin-top: 25px;
+                margin-top: 20px;
                 display: flex;
 
-                >div {  display: flex;
+                >div {
+                    display: flex;
                     flex-direction: column;
 
                     >p:first-child {
@@ -1016,7 +1020,7 @@ button {
                     width: 135px;
                     height: 96px;
                     margin-left: 57px;
-                 
+
 
                     >p:last-child {
 
@@ -1031,6 +1035,7 @@ button {
                     width: 135px;
                     height: 96px;
                     margin-left: 182px;
+
                     >p:last-child {
 
                         width: 270px;
@@ -1045,6 +1050,7 @@ button {
                     width: 135px;
                     height: 96px;
                     margin-left: 182px;
+
                     >p:last-child {
 
                         width: 270px;
@@ -1059,6 +1065,7 @@ button {
                     width: 135px;
                     height: 96px;
                     margin-left: 182px;
+
                     >p:last-child {
 
                         width: 270px;
@@ -1073,4 +1080,278 @@ button {
     }
 
 
+}
+
+.put-the-technique {
+    border-top: 30px solid #FCD127;
+    border-bottom: 30px solid #FCD127;
+    padding-top: 25px;
+    padding-bottom: 55px;
+    background: url(../img/put-the-technique_bg.jpg) 50% 100% no-repeat;
+
+    h3 {
+        font-family: 'PT Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 33px;
+        line-height: 142.19%;
+
+        span {
+            font-family: 'PT Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 33px;
+            line-height: 142.19%;
+            color: #FF971D;
+        }
+
+    }
+}
+
+.row {
+    margin-top: 45px;
+
+    button {
+        width: 300px;
+        height: 50px;
+        background: #FCB427;
+        font-family: 'PT Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 141.69%;
+        color: #FFFFFF;
+
+
+    }
+
+    input {
+        width: 300px;
+        height: 50px;
+        left: 0px;
+        top: 0px;
+        background: #FFFFFF;
+        border: 1px solid #535554;
+        margin-right: 30px;
+    }
+}
+
+.checkbox {
+    display: flex;
+    margin-top: 20px;
+
+
+
+    input {
+        margin-right: 15px;
+    }
+
+    span {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 120%;
+        color: #2D2D2D;
+    }
+
+    a {
+        color: #2D2D2D;
+        ;
+
+    }
+}
+
+.about-we {
+
+    height: 781px;
+    display: flex;
+
+    .container {
+
+        h3 {
+            font-family: 'PT Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 141.69%;
+            color: #2D2D2D;
+        }
+
+        p {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 156.69%;
+            color: #2D2D2D;
+            padding-top: 41px;
+
+
+
+
+        }
+
+        >div {
+            margin-top: 157px;
+            margin-right: 43px;
+            margin-left: 110px;
+        }
+    }
+
+    >div:last-child {
+        width: 784px;
+        height: 481px;
+        margin-top: 157px;
+        display: flex;
+        flex-direction: column;
+
+
+
+        >div {
+            width: 288px;
+            height: 30px;
+            background: url(../img/stripes.svg);
+            align-self: flex-end;
+        }
+
+
+    }
+
+
+    background: url(../img/about.png) no-repeat center left,
+    #E5E5E5;
+}
+
+.services {
+    padding-top: 50px;
+    padding-bottom: 85px;
+    background-image: url(../img/LEBHER.png), url(../img/Services-back.png);
+    background-position: 0 135px, 100% 100%;
+    background-repeat: no-repeat, no-repeat;
+    background-color: #fff;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .g-title {
+        padding-bottom: 35px;
+        font-family: 'PT Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 141.69%;
+        color: #2D2D2D;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -15px;
+        margin-right: -15px;
+
+        .services__item {
+            margin: 15px;
+            width: calc(33.3% - 30px);
+
+            .services__btn {
+                font-size: 18px;
+                font-weight: 700;
+                height: 83px;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                padding: 5px 20px;
+                background: #FCB427;
+                color: #fff;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+
+
+                .services__btn:hover {
+                    background: orange;
+                }
+            }
+
+            .services__img {
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+            }
+
+
+        }
+    }
+}
+
+.info-block {
+    background: #F3F3F3;
+    padding-top: 103px;
+    padding-bottom: 100px;
+
+    h2 {
+        font-family: 'PT Sans', sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+
+    p {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 156.69%;
+        color: #2D2D2D;
+        padding-bottom: 20px;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        margin-bottom: 22px;
+        padding-left: 20px;
+        position: relative;
+        letter-spacing: -.03px;
+        line-height: 1.5;
+        font-size: 16px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 156.69%;
+        color: #2D2D2D;
+
+
+    }
+
+    li:before {
+        left: 0;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 10px;
+        background: #FCB427;
+        position: absolute;
+        top: 50%;
+        content: '';
+        display: block;
+    }
+}
+
+.questions {
+    background: url(../img/questions_back_up.jpg) repeat-x, url(../img/questions_back_up.jpg) 30px 100% repeat-x, url(../img/content/questions-bg2.svg) 130% 39% no-repeat #292929;
+    padding-top: 75px;
+    padding-bottom: 45px;
+    color: #fff;
 }
