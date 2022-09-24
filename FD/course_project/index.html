@@ -11,7 +11,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&family=PT+Sans:wght@700&family=Roboto:wght@500&display=swap"
         rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="scrip.js">
     <link rel="stylesheet" href="css/style.css">
+
+
+
+
 
 </head>
 
@@ -96,40 +103,87 @@
     <div class="rent">
         <div class="container">
             <h3><span>Спецтехника</span> в аренду</h3>
-            <div>
+            <div class="lease">
+                <div class="row">
+                    <div class="lease__img">
 
-                <div>
-                    <img src="img/liebherr-lr-1250-unplugged-crawler-crane-zero-emission-battery-e-antrieb-rau копия 1.png"
-                        alt="crawler-crane" title="crawler-crane">
-                </div>
-                <div>
-                    <h2>Liebherr</h2>
-
-                    <p>Гусеничные краны</p>
-                    <br>
-                    <p>Аренда гусеничного крана – актуальная услуга для многих строительных площадок. Использование
-                        спецтехники существенно упрощает погрузку - выгрузку материалов, оптимизирует рабочий процесс.
-                    </p>
-                    <input type="button" value="Выбрать спецтехнику">
-                    <!-- slide maybe -->
-                    <div class="controls-center">
-                        <div><button> <img src="img/right-arrow_2.svg" alt="right-arrow_2"></button></div>
-                        <button> <img src="img/left-arrow_2.svg" alt="left-arrow"></button>
-                        <div class="scrollbar">
-                            <div class="handle">
-                                <div class="mousearea"></div>
-                            </div>
+                        <img src="img/rent_1.png" alt="Организация негабаритных перевозок" width="650" height="375">
+                    </div>
+                    <div class="lease__text">
+                        <div class="g-title">
+                            <h3>Гусеничные краны</h3>
+                        </div>
+                        <div class="desc">
+                            Аренда гусеничного крана – актуальная услуга для многих строительных площадок. Использование
+                            спецтехники существенно упрощает погрузку - выгрузку материалов, оптимизирует рабочий
+                            процесс.
 
                         </div>
+                        <button>Выбрать спецтехнику</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="lease__img">
+
+                        <img src="img/rent_2.png" alt="Организация негабаритных перевозок" width="650" height="375">
+                    </div>
+                    <div class="lease__text">
+                        <div class="g-title">
+                            <h3>Apeндa мобильных aвтoкpaнов LIEBHERR LTM</h3>
+                        </div>
+                        <div class="desc">
+                            В нашей компании можно заказать в аренду автокраны Liebherr LTM. Серия разработана немецкими
+                            инженерами с применением новейших технологий. Все модели (более 15 спецификаций)
+                            демонстрируют отличные показатели надежности. </div>
+                        <button>Выбрать спецтехнику</button>
 
                     </div>
 
+                </div>
+                <div class="row">
+                    <div class="lease__img">
+
+                        <img src="img/rent_3.png" alt="Организация негабаритных перевозок" width="650" height="375">
+                    </div>
+                    <div class="lease__text">
+                        <div class="g-title">
+                            <h3>Аренда низкорамных тралов</h3>
+                        </div>
+                        <div class="desc">
+
+                            Трал для перевозки спецтехники применяется, когда необходима транспортировка тяжёлых
+                            крупногабаритных грузов на различные расстояния. Предлагаем аренду низкорамных тралов в
+                            Москве, области, а также других городах России. </div>
+                        <button>Выбрать спецтехнику</button>
+
+                    </div>
 
                 </div>
+                <div class="row">
+                    <div class="lease__img">
+
+                        <img src="img/rent_4.png" alt="Организация негабаритных перевозок" width="650" height="375">
+                    </div>
+                    <div class="lease__text">
+                        <div class="g-title">
+                            <h3>Организация негабаритных перевозок</h3>
+                        </div>
+                        <div class="desc">
+                            Компания «Еврокран» организует автомобильные негабаритные перевозки по Москве, области и в
+                            регионы.
+                            Наши сотрудники готовы ответить на вопросы, предложить качественные услуги с привлечением
+                            специалистов.</div>
+                        <button>Выбрать спецтехнику</button>
+
+                    </div>
+
+                </div>
+
             </div>
 
-        </div>
 
+
+        </div>
     </div>
     <!-- Продолжение рента -->
     <div class="rent_2">
@@ -147,11 +201,12 @@
                         монтажных, транспортировочных и
                         других работ. </p>
 
-                    <p>Обращение в компанию гарантирует комплексный подход к решению поставленных задач. Получить больше
+                    <p>Обращение в компанию гарантирует комплексный подход к решению поставленных задач. Получить
+                        больше
                         информации можно
                         у менеджеров Компании Еврокран.</p>
                 </div>
-                <button>Заказать звонок</button>
+                <button><a href="#"></a>Заказать звонок</a></button>
             </div>
             <div>
                 <div><img src="img/pink_elips.svg" alt="pink-elips">
@@ -207,10 +262,259 @@
     <div class="relize-proect">
         <div class="container">
             <h2>Реализованные проекты</h2>
+        </div>
+        <div class="project-container">
+            <div class="project-nav">
+                <div class="row">
+                    <div class="lease__img">
 
+                        <img src="img/project-1.jpg" alt="Организация негабаритных перевозок" width="170" height="137">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="lease__img">
+
+                        <img src="img/project-2.jpg" alt="Организация негабаритных перевозок" width="170" height="137">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="lease__img">
+
+                        <img src="img/project-3.jpeg" alt="Организация негабаритных перевозок" width="170" height="137">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="lease__img">
+
+                        <img src="img/project-4.jpg" alt="Организация негабаритных перевозок" width="170" height="137">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="lease__img">
+
+                        <img src="img/project-5.jpg" alt="Организация негабаритных перевозок" width="170" height="137">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="lease__img">
+
+                        <img src="img/project-6.jpg" alt="Организация негабаритных перевозок" width="170" height="137">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="lease__img">
+
+                        <img src="img/project-7.jpg" alt="Организация негабаритных перевозок" width="170" height="137">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="lease__img">
+
+                        <img src="img/project-8.jpg" alt="Организация негабаритных перевозок" width="170" height="137">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="lease__img">
+
+                        <img src="img/project-9.jpg" alt="Организация негабаритных перевозок" width="170" height="137">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="lease__img">
+
+                        <img src="img/project-10.jpg" alt="Организация негабаритных перевозок" width="170" height="137">
+                    </div>
+                </div>
+
+            </div>
+            <div class="project-for">
+                <div class="row">
+                    <div class="lease__img">
+
+                        <img src="img/project-1.jpg" alt="Организация негабаритных перевозок" width="788" height="582">
+                    </div>
+                    <div class="lease__text">
+                        <div class="g-title">
+                            <h3>Погрузочные работы краном LIEBHERR LTM1500</h3>
+                        </div>
+                        <div class="projects__slider__location">Ярославский судостроительный завод</div>
+                        <p>Погрузка двигателей на судно краном LIEBHERR LTM1500.</p>
+                        <a class="more" href="#" >Подробнее</a>
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="lease__img">
+
+                        <img src="img/project-2.jpg" alt="Организация негабаритных перевозок" width="788" height="582">
+                    </div>
+                    <div class="lease__text">
+                        <div class="g-title">
+                            <h3>Подъем чиллеров на кровлю здания</h3>
+                        </div>
+                        <p>Подъем климатического оборудования (чиллеров) на кровлю здания мобильным краном LIEBHERR LTM1400</p>
+                        <a class="more" href="#" >Подробнее</a>
+
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="lease__img">
+
+                        <img src="img/project-3.jpeg" alt="Организация негабаритных перевозок" width="788" height="582">
+                    </div>
+                    <div class="lease__text">
+                        <div class="g-title">
+                            <h3>Замена балок ж/д моста краном LIEBHERR LTM1250</h3>
+                        </div>
+                        <p>Капитальный ремонт ж/д моста, замена балок краном LIEBHERR LTM1250 на ж/д пути Москва- Санкт-Петербург.</p>
+                        <a class="more" href="#" >Подробнее</a>
+
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="lease__img">
+
+                        <img src="img/project-4.jpg" alt="Организация негабаритных перевозок" width="788" height="582">
+                    </div>
+                    <div class="lease__text">
+                        <div class="g-title">
+                            <h3>Организация негабаритных перевозок</h3>
+                        </div>
+                        <div class="desc">
+                            Компания «Еврокран» организует автомобильные негабаритные перевозки по Москве, области и в
+                            регионы.
+                            Наши сотрудники готовы ответить на вопросы, предложить качественные услуги с привлечением
+                            специалистов.</div>
+
+
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="lease__img">
+
+                        <img src="img/project-5.jpg" alt="Организация негабаритных перевозок" width="788" height="582">
+                    </div>
+                    <div class="lease__text">
+                        <div class="g-title">
+                            <h3>Организация негабаритных перевозок</h3>
+                        </div>
+                        <div class="desc">
+                            Компания «Еврокран» организует автомобильные негабаритные перевозки по Москве, области и в
+                            регионы.
+                            Наши сотрудники готовы ответить на вопросы, предложить качественные услуги с привлечением
+                            специалистов.</div>
+
+
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="lease__img">
+
+                        <img src="img/project-6.jpg" alt="Организация негабаритных перевозок" width="788" height="582">
+                    </div>
+                    <div class="lease__text">
+                        <div class="g-title">
+                            <h3>Организация негабаритных перевозок</h3>
+                        </div>
+                        <div class="desc">
+                            Компания «Еврокран» организует автомобильные негабаритные перевозки по Москве, области и в
+                            регионы.
+                            Наши сотрудники готовы ответить на вопросы, предложить качественные услуги с привлечением
+                            специалистов.</div>
+
+
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="lease__img">
+
+                        <img src="img/project-7.jpg" alt="Организация негабаритных перевозок" width="788" height="582">
+                    </div>
+                    <div class="lease__text">
+                        <div class="g-title">
+                            <h3>Организация негабаритных перевозок</h3>
+                        </div>
+                        <div class="desc">
+                            Компания «Еврокран» организует автомобильные негабаритные перевозки по Москве, области и в
+                            регионы.
+                            Наши сотрудники готовы ответить на вопросы, предложить качественные услуги с привлечением
+                            специалистов.</div>
+
+
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="lease__img">
+
+                        <img src="img/project-8.jpg" alt="Организация негабаритных перевозок" width="788" height="582">
+                    </div>
+                    <div class="lease__text">
+                        <div class="g-title">
+                            <h3>Организация негабаритных перевозок</h3>
+                        </div>
+                        <div class="desc">
+                            Компания «Еврокран» организует автомобильные негабаритные перевозки по Москве, области и в
+                            регионы.
+                            Наши сотрудники готовы ответить на вопросы, предложить качественные услуги с привлечением
+                            специалистов.</div>
+
+
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="lease__img">
+
+                        <img src="img/project-9.jpg" alt="Организация негабаритных перевозок" width="788" height="582">
+                    </div>
+                    <div class="lease__text">
+                        <div class="g-title">
+                            <h3>Организация негабаритных перевозок</h3>
+                        </div>
+                        <div class="desc">
+                            Компания «Еврокран» организует автомобильные негабаритные перевозки по Москве, области и в
+                            регионы.
+                            Наши сотрудники готовы ответить на вопросы, предложить качественные услуги с привлечением
+                            специалистов.</div>
+
+
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="lease__img">
+
+                        <img src="img/project-10.jpg" alt="Организация негабаритных перевозок" width="788" height="582">
+                    </div>
+                    <div class="lease__text">
+                        <div class="g-title">
+                            <h3>Организация негабаритных перевозок</h3>
+                        </div>
+                        <div class="desc">
+                            Компания «Еврокран» организует автомобильные негабаритные перевозки по Москве, области и в
+                            регионы.
+                            Наши сотрудники готовы ответить на вопросы, предложить качественные услуги с привлечением
+                            специалистов.</div>
+
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
         </div>
 
+
     </div>
+
     <div class="equipment-catalog">
         <div class="container">
             <h2>Каталог техники</h2>
@@ -327,7 +631,8 @@
                     </div>
                     <div>
                         <p>03</p>
-                        <p>Стоимость мобилизации и демобилизации за МКАД и на территорию в границах ТТК обговаривается
+                        <p>Стоимость мобилизации и демобилизации за МКАД и на территорию в границах ТТК
+                            обговаривается
                             индивидуально и требует дополнительной оплаты.</p>
                     </div>
                     <div>
@@ -391,7 +696,8 @@
                 <p> Мы работаем с 2000 года и за это время не раз доказали свой профессионализм и компетентность:
                     сегодня нам доверяют крупнейшие предприятия России.</p>
 
-                <p> Мы обладаем собственным парком с более чем 50 единицами техники и находимся в черте Москвы. Поэтому
+                <p> Мы обладаем собственным парком с более чем 50 единицами техники и находимся в черте Москвы.
+                    Поэтому
                     мы можем подать любую технику в любую точку города незамедлительно, что <br>
                     бывает весьма кстати в
                     случае возникновения каких-либо <br>
@@ -463,14 +769,19 @@
         <div class="container">
             <h2>Аренда автокранов LIEBHERR в Москве</h2>
             <p>Аренда автокранов решает разные задачи. Благодаря большой грузоподъемности техника используется при
-                установке и разборке башенных кранов, строительстве мостовых пролетов, монтаже дымовых труб самонесущей
+                установке и разборке башенных кранов, строительстве мостовых пролетов, монтаже дымовых труб
+                самонесущей
                 конструкции, выполнении аварийно-восстановительных работ в Москве. </p>
             <h2>Аренда спецтехники Liebherr </h2>
-            <p>Liebherr («Либхерр») — известная немецкая машиностроительная компания. Ее автокраны востребованы во всем
-                мире благодаря своим уникальным возможностям. Основополагающие критерии их выбора — скорость и качество
+            <p>Liebherr («Либхерр») — известная немецкая машиностроительная компания. Ее автокраны востребованы во
+                всем
+                мире благодаря своим уникальным возможностям. Основополагающие критерии их выбора — скорость и
+                качество
                 работы. Крупные строительные компании и частные лица предпочитают арендовать строительные краны
-                «Либхерр». Их выбор обусловлен надежностью, высокой производительностью установок. Срок службы агрегатов
-                исчисляется десятилетиями, на протяжении которых они сохраняют свои характеристики и не теряют качества.
+                «Либхерр». Их выбор обусловлен надежностью, высокой производительностью установок. Срок службы
+                агрегатов
+                исчисляется десятилетиями, на протяжении которых они сохраняют свои характеристики и не теряют
+                качества.
             </p>
             <p>На сегодняшний день мы реализовали сотни успешных проектов. Среди них:</p>
             <ul>
@@ -478,20 +789,26 @@
                     «Казметрострой». Техника использовалась для демонтажа и перевозки проходческих щитов.</li>
                 <li>Участие автокрана Liebherr LR 1750 и автотрейлеров в демонтаже проходческого щита на участке
                     метрополитена от станции «Выхино» до «Косино-Ухтомской».</li>
-                <li>Использование Liebherr LTM 1500 в качестве основной мощности для производства работ при возведении
+                <li>Использование Liebherr LTM 1500 в качестве основной мощности для производства работ при
+                    возведении
                     Лукомльской ГРЭС. В качестве арендатора выступала китайская машиностроительная инжиниринговая
                     компания.</li>
-                <li>Аренда низкорамных тралов для транспортировки спецтехники официального дилера ТМ в России, компании
+                <li>Аренда низкорамных тралов для транспортировки спецтехники официального дилера ТМ в России,
+                    компании
                     ООО «Либхерр-Русланд».</li>
                 <li>Установка нового реактора гидрокрекинга на территории завода ОАО «Уфанефтехим».</li>
-                <li>Демонтаж старых и монтаж новых чиллеров на крыше здания Mail.ru. Арендатор — строительный холдинг
+                <li>Демонтаж старых и монтаж новых чиллеров на крыше здания Mail.ru. Арендатор — строительный
+                    холдинг
                     КМТ.</li>
-                <li>Монтаж мостовых балок на головном участке автомобильной скоростной дороги Москва-Санкт-Петербург,
+                <li>Монтаж мостовых балок на головном участке автомобильной скоростной дороги
+                    Москва-Санкт-Петербург,
                     произведенный с использованием кранов Liebherr.</li>
-                <li>Транспортировка и установка проходческого щита из Протвино в Москву для возведения Бутовской линии
+                <li>Транспортировка и установка проходческого щита из Протвино в Москву для возведения Бутовской
+                    линии
                     метрополитена. Заказ выполнен компанией «Транстоннельстрой».</li>
             </ul>
-            <p>Условия аренды оговариваются индивидуально. География предоставления услуги — Москва, Санкт-Петербург,
+            <p>Условия аренды оговариваются индивидуально. География предоставления услуги — Москва,
+                Санкт-Петербург,
                 Екатеринбург, Нижний Новгород, Пермь, Воронеж, Челябинск, Краснодар, Ярославль, Самара, Уфа и другие
                 города РФ.</p>
         </div>
@@ -507,8 +824,8 @@
                 Оставьте заявку на звонок и мы ответим на все ваши вопросы в самое ближайшее время </p>
             <div>
 
-                <form method="POST" action="/"><input type="hidden" value=""><input type="hidden" name="AJAX_CALL"
-                        value="Y"> <input type="hidden" name="sessid" id="sessid_1" value="">
+                <form method="POST" action="/"><input type="hidden" value=""><input type="hidden" value="Y"> <input
+                        type="hidden" name="sessid" id="sessid_1" value="">
 
                     <input type="text" name="user_name" placeholder="Ваше имя" value="" required="">
 
@@ -524,7 +841,7 @@
                             использования моих персональных данных </span>
                     </label>
 
-                    <label class="btn btn">
+                    <label class="btn-btn">
 
                         <input type="hidden" value="Заказать звонок">
                         <input type="submit" name="submit" value="Заказать звонок">
@@ -546,8 +863,93 @@
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+        integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script> $('.lease').slick({
+            dots: true
+        });</script>
+    <script> $(".project-for").slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            speed: 500,
+            arrows: false,
+            fade: true,
+            asNavFor: ".project-nav"
+        });
+      $("center"),$(".project-nav").slick({
+            slidesToShow: 8,
+            slidesToScroll: 1,
+            speed: 500,
+            asNavFor: ".project-for",
+            dots: false,
+            centerMode: true,
+            focusOnSelect: true,
+            slide: "div"
+           
+        });
+        </script>
 
 </body>
 
 </html>
+
+
+/* Слайдер */
+.slick-slider {}
+
+/* Слайдер запущен */
+.slick-slider.slick-initialized {}
+
+/* Слайдер с точками */
+.slick-slider.slick-dotted {}
+
+/* Ограничивающая оболочка
+.slick-list {}
+
+/* Лента слайдов */
+.slick-track {}
+
+/* Слайд */
+.slick-slide {}
+
+/* Слайд активный (показывается) */
+.slick-slide.slick-active {}
+
+/* Слайд основной */
+.slick-slide.slick-current {}
+
+/* Слайд по центру */
+.slick-slide.slick-center {}
+
+/* Клонированный слайд */
+.slick-slide.slick-cloned {}
+
+/* Стрелка */
+.slick-arrow {}
+
+/* Стрелка влево */
+.slick-arrow.slick-prev {}
+
+/* Стрелка вправо */
+.slick-arrow.slick-next {}
+
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {}
+
+/* Точки (булиты) */
+.slick-dots {}
+
+.slick-dots li {}
+
+/* Активная точка */
+.slick-dots li.slick-active {}
+
+/* Элемент точки */
+.slick-dots li button {}
+
+/* Элемент точки *
