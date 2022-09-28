@@ -1,136 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" >
     <style>
-        input {
-            width: 25px;
-            height: 25px;
-            margin: 3px;
-        }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        .swiper {
-            width: 600px;
-            height: 300px;
-        }
     </style>
 </head>
 
 <body>
-
-    <input type="button" value="1" onclick="getNumber(1)">
-    <input type="button" value="2" onclick="getNumber(2)">
-    <input type="button" value="3" onclick="getNumber(3)"><br>
-    <input type="button" value="4" onclick="getNumber(4)">
-    <input type="button" value="5" onclick="getNumber(5)">
-    <input type="button" value="6" onclick="getNumber(6)"><br>
-    <input type="button" value="7" onclick="getNumber(7)">
-    <input type="button" value="8" onclick="getNumber(8)">
-    <input type="button" value="9" onclick="getNumber(9)"><br>
-    <input type="button" value="0" onclick="getNumber(0)">
-    <input type="button" value="+" onclick="getOperation('+')">
-    <input type="button" value="-" onclick="getOperation('-')"><br>
-    <input type="button" value="/" onclick="getOperation('/')">
-    <input type="button" value="*" onclick="getOperation('*')">
-    <input type="button" value="=" onclick="result()">
-
-    <div id="result"></div>
-
+  
 
     <script>
-        var x = null, y = null, operVariable = "";
-        function getNumber(num) {
-            if (x == null) {
-                x = num;
+        function clock() {
+            var now = new Date();
+            var ctx = document.getElementById('canvas').getContext('2d');
+            ctx.save();
+            ctx.clearRect(0, 0, 150, 150);
+            ctx.translate(75, 75);
+            ctx.scale(0.4, 0.4);
+            ctx.rotate(-Math.PI / 2);
+            ctx.strokeStyle = "black";
+            ctx.fillStyle = "white";
+            ctx.lineWidth = 8;
+            ctx.lineCap = "round";
+
+            // Hour marks
+            ctx.save();
+            for (var i = 0; i < 12; i++) {
+                ctx.beginPath();
+                ctx.rotate(Math.PI / 6);
+                ctx.moveTo(100, 0);
+                ctx.lineTo(120, 0);
+                ctx.stroke();
             }
-            else {
-                y = num;
+            ctx.restore();
+
+            // Minute marks
+            ctx.save();
+            ctx.lineWidth = 5;
+            for (i = 0; i < 60; i++) {
+                if (i % 5 != 0) {
+                    ctx.beginPath();
+                    ctx.moveTo(117, 0);
+                    ctx.lineTo(120, 0);
+                    ctx.stroke();
+                }
+                ctx.rotate(Math.PI / 30);
             }
+            ctx.restore();
 
+            var sec = now.getSeconds();
+            var min = now.getMinutes();
+            var hr = now.getHours();
+            hr = hr >= 12 ? hr - 12 : hr;
+
+            ctx.fillStyle = "black";
+
+            // write Hours
+            ctx.save();
+            ctx.rotate(hr * (Math.PI / 6) + (Math.PI / 360) * min + (Math.PI / 21600) * sec)
+            ctx.lineWidth = 14;
+            ctx.beginPath();
+            ctx.moveTo(-20, 0);
+            ctx.lineTo(80, 0);
+            ctx.stroke();
+            ctx.restore();
+
+            // write Minutes
+            ctx.save();
+            ctx.rotate((Math.PI / 30) * min + (Math.PI / 1800) * sec)
+            ctx.lineWidth = 10;
+            ctx.beginPath();
+            ctx.moveTo(-28, 0);
+            ctx.lineTo(112, 0);
+            ctx.stroke();
+            ctx.restore();
+
+            // Write seconds
+            ctx.save();
+            ctx.rotate(sec * Math.PI / 30);
+            ctx.strokeStyle = "#D40000";
+            ctx.fillStyle = "#D40000";
+            ctx.lineWidth = 6;
+            ctx.beginPath();
+            ctx.moveTo(-30, 0);
+            ctx.lineTo(83, 0);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.arc(0, 0, 10, 0, Math.PI * 2, true);
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(95, 0, 10, 0, Math.PI * 2, true);
+            ctx.stroke();
+            ctx.fillStyle = "rgba(0,0,0,0)";
+            ctx.arc(0, 0, 3, 0, Math.PI * 2, true);
+            ctx.fill();
+            ctx.restore();
+
+            ctx.beginPath();
+            ctx.lineWidth = 14;
+            ctx.strokeStyle = '#325FA2';
+            ctx.arc(0, 0, 142, 0, Math.PI * 2, true);
+            ctx.stroke();
+
+            ctx.restore();
+
+            window.requestAnimationFrame(clock);
         }
-        function getOperation(oper) {
-            operVariable = oper
 
-        }
-        function result() {
-            var El = document.getElementById('result');
-
-            switch (operVariable) {
-                case "+": El.innerText = x + y;
-                    break;
-                case "-": El.innerText = (x - y).toString();
-                    break;
-                case "/": El.innerText = (x / y).toString();
-                    break;
-                case "*": El.innerText = (x * y).toString();
-                    break;
-
-            }
-        }
-
+        window.requestAnimationFrame(clock);
     </script>
 
-  <div>
-    <!-- Slider main container -->
-    <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            ...
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
 
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
-      
-        <div class="swiper-scrollbar"></div>
-    </div>
-</div>
-    <script>
-    const swiper = new Swiper('.swiper', {
-        // Optional parameters
-        direction: 'vertical',
-        loop: true,
-      
-        // If we need pagination
-        pagination: {
-          el: '.swiper-pagination',
-        },
-      
-        // Navigation arrows
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      
-        // And if we need scrollbar
-        scrollbar: {
-          el: '.swiper-scrollbar',
-        },
-      });
-      </script>
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </body>
-
 
 </html>
