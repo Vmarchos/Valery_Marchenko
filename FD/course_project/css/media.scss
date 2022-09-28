@@ -115,7 +115,26 @@
                     box-sizing: border-box;
                     background: #f3f3f3;
                     z-index: 10000;
+                    opacity: 0.8;
                 }
+
+                .nav-menu.open {
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: 50px;
+                }
+
+                .menu-close {
+                    display: block;
+                }
+
+                ul {
+                    flex-direction: column;
+                    li{
+                        padding-bottom: 30px
+                    }
+                }
+
             }
 
         }

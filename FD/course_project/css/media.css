@@ -95,7 +95,26 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     background: #f3f3f3;
-    z-index: 10000; }
+    z-index: 10000;
+    opacity: 0.8; }
+  .nav .container .row .nav-menu.open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 50px; }
+  .nav .container .row .menu-close {
+    display: block; }
+  .nav .container .row ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .nav .container .row ul li {
+      padding-bottom: 30px; }
 
   .rent {
     height: 1116px;

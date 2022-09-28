@@ -186,7 +186,37 @@ li {
                     background: #000;
                     margin: 5px 0;
                 }
+            }
 
+            .menu-close {
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                display: none;
+                width: 30px;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                padding: 0 5px;
+                margin: 15px 10px;
+                height: 30px;
+
+                span {
+                    display: block;
+                    width: 100%;
+                    height: 3px;
+                    background: #000;
+                    margin: 5px 0;
+                    top: 9px;
+                    left: 0;
+                    position: absolute;
+
+                    transform: rotate(45deg);
+                }
+
+                span:nth-child(2) {
+                    transform: rotate(-45deg);
+
+                }
             }
 
             ul {
@@ -1184,6 +1214,7 @@ li {
 
         .video {
             margin-top: 157px;
+            width: 100%;
 
         }
     }
