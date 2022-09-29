@@ -96,6 +96,18 @@ li {
       font-size: 18px;
       line-height: 141.69%;
       color: #FFFFFF; }
+    .header .container .header-btn input:hover {
+      width: 205px;
+      height: 43px;
+      border: 1px solid #FFBF1D;
+      background: white;
+      font-family: 'PT Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 141.69%;
+      color: #2D2D2D;
+      cursor: pointer; }
   .header .container .header-contacts {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -118,6 +130,42 @@ li {
   margin: auto;
   padding-left: 15px;
   padding-right: 15px; }
+
+#back-top {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  -webkit-transition: background-color .3s, opacity .5s, visibility .5s;
+  transition: background-color .3s, opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000; }
+
+#back-top::after {
+  content: "up";
+  font-family: 'Montserrat';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1em;
+  line-height: 50px;
+  color: #fff; }
+
+#back-top:hover {
+  cursor: pointer;
+  background-color: #333; }
+
+#back-top:active {
+  background-color: #555; }
+
+#back-top.show {
+  opacity: 1;
+  visibility: visible; }
 
 .nav {
   padding: 25px 0;
@@ -310,7 +358,11 @@ li {
         font-size: 18px;
         color: #FFFFFF;
         margin-top: 30px;
-        margin-right: 28px; }
+        margin-right: 28px;
+        border: none; }
+      .baners > div:first-child > div > input:hover {
+        background: #f1a206;
+        cursor: pointer; }
       .baners > div:first-child > div > input + input {
         border: 1px solid #2D2D2D;
         background: none;
@@ -319,6 +371,15 @@ li {
         font-weight: 700;
         font-size: 18px;
         color: #2D2D2D; }
+      .baners > div:first-child > div > input + input:hover {
+        border: 1px solid #2D2D2D;
+        background: #2D2D2D;
+        font-family: 'PT Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        color: white;
+        cursor: pointer; }
   .baners > div:last-child {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -381,6 +442,11 @@ li {
       margin-top: 44px;
       width: 219px;
       height: 50px; }
+    .rent .container .lease .row button:hover {
+      margin-top: 44px;
+      width: 219px;
+      height: 50px;
+      background: #f1a206; }
     .rent .container .lease .row .lease__img > img {
       display: block;
       margin-right: 100px; }
@@ -424,6 +490,8 @@ li {
         margin-top: 40px;
         width: 100%;
         max-width: 219px; }
+        .rent_2 .container .row .rent2-text .rent2-btn button:hover {
+          background: #f1a206; }
     .rent_2 .container .row .rent2-icon {
       padding-top: 13px;
       display: -webkit-box;
@@ -557,30 +625,37 @@ li {
       border: 2px solid #FF971D;
       margin-top: 34px;
       margin-right: 93px; }
-      .equipment-catalog .container .controls-center > div:first-child > button {
-        margin-left: -14px;
-        border: none;
-        -ms-flex-item-align: center;
-            align-self: center;
-        background: none; }
-        .equipment-catalog .container .controls-center > div:first-child > button img {
-          width: 30px;
-          height: 10px;
-          background: none;
-          cursor: pointer; }
-    .equipment-catalog .container .controls-center > button {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-item-align: center;
-          align-self: center;
-      margin-top: -24px;
-      background: none;
-      border: none; }
-      .equipment-catalog .container .controls-center > button > img {
-        margin-left: -80px;
-        cursor: pointer; }
 
+.equipment-catalog .catalog_tocat {
+  padding-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .equipment-catalog .catalog_tocat .btn_cat {
+    padding-left: 25px;
+    padding-right: 25px;
+    border: #FCB427 solid 1px;
+    width: 200px;
+    height: 50px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 141.69%;
+    color: #2D2D2D;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .equipment-catalog .catalog_tocat .btn_cat:hover {
+    background: #2D2D2D;
+    color: white;
+    border: none; }
 .equipment-catalog .catalog-container {
   max-width: 100%;
   margin: 0 auto; }
@@ -635,6 +710,8 @@ li {
       margin-left: 26px;
       background: url(../img/Arrow-right-3.svg) right center no-repeat;
       padding-right: 30px; }
+    .equipment-catalog .catalog-container .catalog-slider .characteristics .catalog__btn:hover {
+      background: #f1a206; }
     .equipment-catalog .catalog-container .catalog-slider .characteristics .catalog__btn {
       width: 311px;
       height: 50px;
@@ -794,6 +871,8 @@ li {
       color: #FF971D; }
   .put-the-technique .row {
     margin-top: 45px; }
+    .put-the-technique .row button:hover {
+      background: #f1a206; }
 
 .row {
   display: -webkit-box;
@@ -914,8 +993,8 @@ li {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center; }
-        .services .row .services__item .services__btn .services__btn:hover {
-          background: orange; }
+      .services .row .services__item .services__btn:hover {
+        background: #f1a206; }
       .services .row .services__item .services__img {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1058,6 +1137,9 @@ li {
     font-size: 18px;
     line-height: 141.69%;
     color: #FFFFFF; }
+  .questions input[type="submit"]:hover {
+    background: #f1a206;
+    cursor: pointer; }
 
 .rent .lease .slick-track {
   display: -webkit-box;

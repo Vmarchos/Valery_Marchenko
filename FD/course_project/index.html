@@ -24,6 +24,10 @@
 </head>
 
 <body>
+    <!-- Back to top button -->
+
+    <a id="back-top"></a>
+
 
     <div class="header">
         <div class="container">
@@ -715,7 +719,9 @@
             </div>
         </div>
 
-
+        <div class="catalog_tocat">
+            <a class="btn_cat" href="#">Перейти в каталог</a>
+        </div>
     </div>
 
 
@@ -1058,8 +1064,8 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
-        integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <!-- first slider -->
@@ -1245,6 +1251,23 @@
         }
 
         window.requestAnimationFrame(clock);
+    </script>
+    <script>
+        var btn = $('#back-top');
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+
+        btn.click(function (event) {
+            event.preventDefault();
+            $('html, body').animate({ scrollTop: '0' }, '300');
+        });
+
     </script>
 
 

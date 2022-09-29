@@ -26,7 +26,6 @@ li {
     list-style-type: none;
 }
 
-
 .header {
     background: #2D2D2D;
     height: 95px;
@@ -108,6 +107,20 @@ li {
                 line-height: 141.69%;
                 color: #FFFFFF;
             }
+
+            input:hover {
+                width: 205px;
+                height: 43px;
+                border: 1px solid #FFBF1D;
+                background: white;
+                font-family: 'PT Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 141.69%;
+                color: #2D2D2D;
+                cursor: pointer;
+            }
         }
 
         .header-contacts {
@@ -138,6 +151,53 @@ li {
     padding-right: 15px;
 }
 
+
+
+#back-top {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+
+
+#back-top::after {
+    content: "up";
+    font-family: 'Montserrat';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1em;
+    line-height: 50px;
+    color: #fff;
+
+}
+
+#back-top:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+#back-top:active {
+    background-color: #555;
+}
+
+#back-top.show {
+
+    opacity: 1;
+    visibility: visible;
+
+}
 
 
 
@@ -395,9 +455,15 @@ li {
                 color: #FFFFFF;
                 margin-top: 30px;
                 margin-right: 28px;
+                border: none;
+            }
 
+            >input:hover {
+                background: #f1a206;
+                cursor: pointer;
 
             }
+
 
             >input+input {
                 border: 1px solid #2D2D2D;
@@ -408,6 +474,19 @@ li {
                 font-size: 18px;
                 color: #2D2D2D;
 
+
+            }
+
+            >input+input:hover {
+                border: 1px solid #2D2D2D;
+                background: #2D2D2D;
+                ;
+                font-family: 'PT Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                color: white;
+                cursor: pointer;
 
             }
 
@@ -503,6 +582,16 @@ li {
 
                 }
 
+                button:hover {
+                    margin-top: 44px;
+                    width: 219px;
+                    height: 50px;
+                    background: #f1a206;
+
+
+
+                }
+
                 .lease__img {
                     >img {
                         display: block;
@@ -568,7 +657,14 @@ li {
                     margin-top: 40px;
                     width: 100%;
                     max-width: 219px;
+
+                    button:hover {
+                        background: #f1a206;
+
+                    }
                 }
+
+
             }
 
             .rent2-icon {
@@ -756,44 +852,50 @@ li {
                 margin-right: 93px;
 
 
-                >button {
-                    margin-left: -14px;
-                    border: none;
-                    align-self: center;
-                    background: none;
 
-
-                    img {
-                        width: 30px;
-                        height: 10px;
-                        background: none;
-                        cursor: pointer;
-
-
-                    }
-
-                }
             }
 
-            >button {
-                display: flex;
-                align-self: center;
-                margin-top: -24px;
-                background: none;
-                border: none;
 
-                >img {
-                    margin-left: -80px;
-                    cursor: pointer;
 
-                }
-            }
+
         }
-
     }
+
 }
 
+
 .equipment-catalog {
+    .catalog_tocat {
+        padding-top: 25px;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+
+        .btn_cat {
+            padding-left: 25px;
+            padding-right: 25px;
+            border: #FCB427 solid 1px;
+            width: 200px;
+            height: 50px;
+            font-family: 'PT Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 141.69%;
+            color: #2D2D2D;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .btn_cat:hover {
+            background: #2D2D2D;
+            color: white;
+            border: none;
+        }
+    }
+
     .container {}
 
     .catalog-container {
@@ -876,6 +978,11 @@ li {
                     margin-left: 26px;
                     background: url(../img/Arrow-right-3.svg)right center no-repeat;
                     padding-right: 30px;
+
+                }
+
+                .catalog__btn:hover {
+                    background: #f1a206;
 
                 }
 
@@ -1122,7 +1229,13 @@ li {
 
     .row {
         margin-top: 45px;
+
+        button:hover {
+            background: #f1a206;
+
+        }
     }
+
 
 }
 
@@ -1277,9 +1390,11 @@ li {
 
 
 
-                .services__btn:hover {
-                    background: orange;
-                }
+
+            }
+
+            .services__btn:hover {
+                background: #f1a206;
             }
 
             .services__img {
@@ -1470,6 +1585,14 @@ li {
         font-size: 18px;
         line-height: 141.69%;
         color: #FFFFFF;
+
+    }
+
+    input[type="submit"]:hover {
+
+        background: #f1a206;
+        cursor: pointer;
+
 
     }
 }
