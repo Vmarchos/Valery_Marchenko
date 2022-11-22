@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        alert('Введите ваши фамилию, имя , отчество ');
+        do {
+            name = prompt('Пожалуйста введите ваше имя')
+
+        } while (name == NaN || name == null || name == "" || name == '0' || Number(name) || Number.isNaN(name) == true || name == undefined);
+
+        do {
+            surname = prompt("Введите вашу фамилию")
+        } while (surname == null || surname == NaN || surname == "" || Number(surname) || surname == '0');
+
+
+
+        do {
+            patronymic = prompt("Введите ваше отчество")
+        } while (patronymic == null || patronymic == NaN || patronymic == "" || Number(patronymic) || patronymic == '0' || patronymic == undefined);
+
+
+        do {
+            age = + prompt("Введите ваш возраст")
+        } while (age == null || Number.isNaN(age) == true || age == "" || age <= '0' || age >= '120');
+
+
+
+
+        let gender = confirm('Ваш пол мужской? нажмите окей.\n Если вы женского пола нажмите отмена');
+
+        let genderN;
+        if (gender)
+            genderN = 'мужчина';
+        else
+            genderN = 'женщина';
+
+        let pension;
+        if ((genderN === 'мужчина' && age >= 63) || (genderN === 'женщина' >= 58))
+            pension = 'да';
+        else
+            pension = 'нет'
+        alert('ваше ФИО:  ' + surname + '  ' + name + '  ' + patronymic + '\n' +
+            'ваш возраст в годах:  ' + age + '\n' +
+            'ваш возраст в днях:   ' + age * 365 + '\n' +
+            'через 5 лет вам будет:  ' + (age + 5) + '\n' +
+            'ваш пол:  ' + genderN + '\n' +
+            'вы на пенсии:  ' + pension);
+
+
+
+    </script>
+
+</body>
+
+</html>
