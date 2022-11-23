@@ -14,22 +14,26 @@
         do {
             name = prompt('Пожалуйста введите ваше имя')
 
-        } while (name == NaN || name == null || name == "" || name == '0' || Number(name) || Number.isNaN(name) == true || name == undefined);
+
+        } while (Number.isNaN(name) == true || Number(name) == false || parseFloat(name) || name == "null")
 
         do {
             surname = prompt("Введите вашу фамилию")
-        } while (surname == null || surname == NaN || surname == "" || Number(surname) || surname == '0');
+
+        } while (Number.isNaN(surname) == true || Number(surname) == false || parseFloat(surname) || surname == "null");
 
 
 
         do {
             patronymic = prompt("Введите ваше отчество")
-        } while (patronymic == null || patronymic == NaN || patronymic == "" || Number(patronymic) || patronymic == '0' || patronymic == undefined);
+        } while (Number.isNaN(patronymic) == true || Number(patronymic) == false || parseFloat(patronymic) || patronymic == "null");
 
 
         do {
             age = + prompt("Введите ваш возраст")
-        } while (age == null || Number.isNaN(age) == true || age == "" || age <= '0' || age >= '120');
+        } while (isNaN(age) || Number.isNaN(age) == true || age <= '0' || age >= '120') {
+
+        }
 
 
 
@@ -59,5 +63,9 @@
     </script>
 
 </body>
+name == null || name == "" || name == '0' || Number(name) == false || Number.isNaN(name) == true || name == undefined ||
+name == "null"
 
 </html>
+surname === null || Number.isNaN(surname) === true || surname === "" || Number(surname) || surname == '0' || surname ===
+undefined
