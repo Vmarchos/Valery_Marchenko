@@ -10,30 +10,31 @@
 
 <body>
     <script>
+        "use strict"
         alert('Введите ваши фамилию, имя , отчество ');
         do {
-            name = prompt('Пожалуйста введите ваше имя')
+            var name = prompt('Пожалуйста введите ваше имя');
 
 
-        } while (Number.isNaN(name) == true || Number(name) == false || parseFloat(name) || name == "null")
-
-        do {
-            surname = prompt("Введите вашу фамилию")
-
-        } while (Number.isNaN(surname) == true || Number(surname) == false || parseFloat(surname) || surname == "null");
-
-
+        } while (name === "null" || !name.trim());
 
         do {
-            patronymic = prompt("Введите ваше отчество")
-        } while (Number.isNaN(patronymic) == true || Number(patronymic) == false || parseFloat(patronymic) || patronymic == "null");
+            var surname = prompt("Введите вашу фамилию");
+
+        } while (surname === null || !surname.trim());
+
 
 
         do {
-            age = + prompt("Введите ваш возраст")
-        } while (isNaN(age) || Number.isNaN(age) == true || age <= '0' || age >= '120') {
+            var patronymic = prompt("Введите ваше отчество")
+        } while (patronymic === null || !patronymic.trim());
 
-        }
+
+        do {
+            var age = + prompt("Введите ваш возраст")
+        } while (isNaN(age) || Number.isNaN(age) == true || age <= '0' || age >= '120');
+
+
 
 
 
@@ -63,4 +64,5 @@
     </script>
 
 </body>
+
 </html>
