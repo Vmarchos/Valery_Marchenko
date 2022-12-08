@@ -32,7 +32,7 @@
 
         do {
             var age = + prompt("Введите ваш возраст")
-        } while (isNaN(age) || Number.isNaN(age) == true || age <= '0' || age >= '120');
+        } while (isNaN(age) || age <= 0 || age >= 120);
 
 
 
@@ -42,13 +42,15 @@
         let gender = confirm('Ваш пол мужской? нажмите окей.\n Если вы женского пола нажмите отмена');
 
         let genderN;
+        let genderM = 'мужчина';
+        let genderF = 'женщина';
         if (gender)
-            genderN = 'мужчина';
+            genderN = genderM;
         else
-            genderN = 'женщина';
+            genderN = genderF;
 
         let pension;
-        if ((genderN === 'мужчина' && age >= 63) || (genderN === 'женщина' >= 58))
+        if ((genderN === genderM && age >= 63) || (genderN === genderF >= 58))
             pension = 'да';
         else
             pension = 'нет'
