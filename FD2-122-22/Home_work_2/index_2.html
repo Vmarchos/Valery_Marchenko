@@ -13,19 +13,33 @@
         let arr = [5, 7,
             [4, [2], 8, [1, 3], 2],
             [9, []],
-            1, 8];
+            1, 8
+        ]
+        function treeSum(arr, callback) {
+            var item;
+            for (var j = 0; j < arr.length; j++) {
+                item = arr[j];
 
-        let sum = 0;
-        function treeSum(array) {
+                if (Array.isArray(item)) {
+                    treeSum(item, callback);
+                } else {
+                    callback(item);
+                }
+            }
+        }
+        var mass = [];
 
-            array.forEach(function (value, index) {
-                Array.isArray(value) ? treeSum(value) : sum += value;
-            });
-
-            return sum;
+        function callback(item) {
+            mass.push(item)
         }
 
-        console.log(treeSum(arr));
+        treeSum(arr, callback);
+        var sum = 0;
+        for (var i = 0; i < mass.length; i++) {
+            sum = sum + mass[i];
+        }
+
+        console.log(sum)
     </script>
 
 </body>
