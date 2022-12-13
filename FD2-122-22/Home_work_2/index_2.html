@@ -16,18 +16,20 @@
             1, 8
         ]
         function treeSum(array) {
-            let sum = 0
+            let sum = 0;
             for (let i = 0; i < array.length; i++) {
                 if (Array.isArray(i)) {
-                    sum += treeSum[i];
+                    sum += treeSum[i]
                 }
                 else {
                     sum += i;
-                    return sum;
                 }
+                return sum;
+
             }
 
         }
+
         console.log(treeSum(arr));
 
 
