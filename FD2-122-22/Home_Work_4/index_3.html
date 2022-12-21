@@ -10,18 +10,18 @@
 
 <body>
     <script>
+        "use strict"
         function vowel_count(str) {
             const vowel_list = ['А', 'а', 'О', 'о', 'У', 'у', 'Ы', 'ы', 'Я', 'я', 'Е', 'е', 'Э', 'э', 'Я', 'я', 'И', 'и', 'Ё', 'ё',
                 'Ю', 'ю'];
-            let vcount = 0;
-            const arr = str.split('');
+
+            const arr = [...str];
             function vowels(a, v) {
                 if (vowel_list.includes(v))
-                    return a++;
-                else
-                    return a;
+                    a++;
+                return a;
 
-            };
+            }
             return arr.reduce(vowels, 0);
 
 
