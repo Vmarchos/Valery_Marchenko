@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOWELS_ARR(filter)</title>
+</head>
+
+<body>
+    <script>
+
+        function vowel_count(str) {
+            const vowel_list = ['А', 'а', 'О', 'о', 'У', 'у', 'Ы', 'ы', 'Я', 'я', 'Е', 'е', 'Э', 'э', 'Я', 'я', 'И', 'и', 'Ё', 'ё', 'Ю', 'ю'];
+            let vcount = 0;
+            let arr = str.split('');
+
+
+            let vs = arr.filter(function (v) {
+                return v = vowel_list.includes(v)
+            });
+
+            return vs.length;
+        };
+
+
+
+
+
+        let s = prompt("слово");
+        console.log(vowel_count(s));
+
+
+    </script>
+
+</body>
+
+</html>
