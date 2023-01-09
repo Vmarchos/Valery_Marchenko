@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRINKS_HASH_FUNC</title>
+</head>
+
+<body>
+    <input type="button" value="Добавить напиток" onclick="addDrink()">
+    <input type="button" value="информация" onclick="infoDrink()">
+
+
+
+</body>
+<script>
+    function HashStorage() {
+        this.storage = {};
+        this.addValue = function (key, value) {
+            this.storage[key] = value;
+        }
+        this.getValue = function (key) {
+            return this.storage[key];
+        }
+        this.deleteValue = function (key) {
+            if (key in this.storage) {
+                delete this.storage[key];
+                return true;
+            }
+            else
+                return false;
+        }
+        this.getKeys = function (key) {
+            return Object.keys(this.storage);
+        }
+    }
+
+    const drinkStorage = new HashStorage;
+    function addDrink() {
+        const dName = prompt('введите название напитка');
+        const dRecipe = prompt('введите рецепт');
+        const dAlco = confirm('Напиток алкогольный?');
+        drinkStorage.addValue(dName, { r: dRecipe, a: dAlco });
+
+    }
+    function infoDrink() {
+        const dName = prompt('введите название напитка');
+        const info = drinkStorage.getValue(dName);
+        if (info == undefined) {
+            return alert('такого напитка нет')
+        }
+        else
+            return alert("напиток:" + dName + '\n' + "алкогольный:" + info.a + '\n' + "рецепт:" + info.r);
+
+
+
+    }
+
+</script>
+
+
+</html>
