@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DRINKS_HASH_FUNC</title>
+    <title>DRINKS_HASH_CLASS</title>
 </head>
 
 <body>
@@ -15,18 +15,19 @@
     <input type="button" value="Все напитки " onclick="infoAllDrink()">
 
 
-
 </body>
 <script>
-    function HashStorage() {
-        this.storage = {};
-        this.addValue = function (key, value) {
+    class HashStorage {
+
+        storage = {};
+
+        addValue(key, value) {
             this.storage[key] = value;
         }
-        this.getValue = function (key) {
+        getValue(key) {
             return this.storage[key];
         }
-        this.deleteValue = function (key) {
+        deleteValue(key) {
             if (key in this.storage) {
                 delete this.storage[key];
                 return true;
@@ -34,7 +35,7 @@
             else
                 return false;
         }
-        this.getKeys = function (key) {
+        getKeys(key) {
             return Object.keys(this.storage);
         }
     }
@@ -80,6 +81,5 @@
     }
 
 </script>
-
 
 </html>
