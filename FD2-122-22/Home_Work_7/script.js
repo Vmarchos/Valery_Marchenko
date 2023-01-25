@@ -105,15 +105,7 @@ function buildForm(fD, fE) {
             fE.appendChild(indent);
             fE.removeChild(formL);
         };
-
-
-
-
-
     });
-
-
-
 };
 
 buildForm(formDef1, document.forms.f1);
