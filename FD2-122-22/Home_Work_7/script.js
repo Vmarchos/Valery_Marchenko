@@ -15,7 +15,7 @@ var formDef1 =
         },
         { label: 'Разрешить отзывы:', kind: 'check', name: 'votes' },
         { label: 'Описание сайта:', kind: 'memo', name: 'description' },
-        { label: 'Опубликовать:', kind: 'submit' },
+        { caption: 'Опубликовать', kind: 'submit' },
     ];
 
 var formDef2 =
@@ -24,33 +24,35 @@ var formDef2 =
         { label: 'Имя:', kind: 'longtext', name: 'firstname' },
         { label: 'Отчество:', kind: 'longtext', name: 'secondname' },
         { label: 'Возраст:', kind: 'number', name: 'age' },
-        { label: 'Зарегистрироваться:', kind: 'submit' },
+        { caption: 'Зарегистрироваться', kind: 'submit' },
     ];
+function createInput(element, fE, inputType) {
+    const bT = document.createElement('input');
+    bT.type = inputType;
+    bT.name = element.name;
+    fE.appendChild(bT);
+
+};
+
 function buildForm(fD, fE) {
     fD.forEach(element => {
         var formL = document.createElement('label');
         formL.innerHTML = element.label;
         fE.appendChild(formL);
         if (element.kind == 'longtext') {
-            var bT = document.createElement('input');
-            bT.type = 'text';
-            fE.appendChild(bT);
+            createInput(element, fE, 'text')
             var indent = document.createElement('br');
             fE.appendChild(indent);
-            bT.name = element.name
+
         };
         if (element.kind == 'number') {
-            var bT = document.createElement('input');
-            bT.type = 'number';
-            fE.appendChild(bT);
+            createInput(element, fE, 'number')
             var indent = document.createElement('br');
             fE.appendChild(indent);
 
         };
         if (element.kind == 'shorttext') {
-            var bT = document.createElement('input');
-            bT.type = 'text';
-            fE.appendChild(bT);
+            createInput(element, fE, 'text')
             var indent = document.createElement('br');
             fE.appendChild(indent);
 
@@ -83,9 +85,7 @@ function buildForm(fD, fE) {
             });
         };
         if (element.kind == 'check') {
-            var bT = document.createElement('input');
-            bT.type = 'checkbox';
-            fE.appendChild(bT);
+            createInput(element, fE, 'checkbox')
             var indent = document.createElement('br');
             fE.appendChild(indent);
         };
@@ -99,7 +99,7 @@ function buildForm(fD, fE) {
         if (element.kind == 'submit') {
             var bT = document.createElement('input');
             bT.type = 'submit';
-            bT.value = element.label;
+            bT.value = element.caption;
             fE.appendChild(bT);
             var indent = document.createElement('br');
             fE.appendChild(indent);
