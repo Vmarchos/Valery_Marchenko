@@ -6,10 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FORM_Validation</title>
+    <style>
+        input {
+            margin: 1px;
+            margin-left: auto
+        }
+
+        span {
+            color: red;
+        }
+    </style>
 </head>
 
 <body>
-    <form method=post action='https://fe.it-academy.by/TestForm.php' name='f1'></form>
+    <form method=post action='https://fe.it-academy.by/TestForm.php' name='f1'>
+        Разработчики: <input type="text" name="razrab" value=""><span id="razrError"></span><br>
+        Название сайта: <input type="text" name="sitename" value=""><span id="nameError"></span><br>
+        Url сайта: <input type="text" name="siteurl" value=""><span id="urlError"></span><br>
+        Дата запуска сайта: <input type="date" name="launchdate" value=""><span id="dateError"></span><br>
+        Посетителей в сутки: <input type="number" name="visitors" value=""><span id="visitorError"></span><br>
+        Email для связи: <input type="email" name="email" value=""><span id="mailError"></span><br>
+        Рубрика каталога: <select name="division">
+            <option value="здоровье">здоровье</option>
+            <option value="домашний уют">домашний уют</option>
+            <option value="бытовая техника">бытовая техника</option>
+        </select><span id="divError"></span><br>
+        Размещение: <input type="radio" name="payment" value="бесплатное ">бесплатное <input type="radio" name="payment"
+            value="платное">Платное
+        <input type="radio" name="payment" value="VIP">Vip<span id="paymentError"></span> <br>
+        Разрешить отзывы: <input type="checkbox" name="votes"><span id="votesError"></span><br>
+        Описание сайта: <br> <textarea name="description" cols="50" rows="3"></textarea><span
+            id="reviwsError"></span><br>
+        <input type="submit" value="опубликовать">
+
+
+    </form>
     <script src="script.js"></script>
 </body>
 
