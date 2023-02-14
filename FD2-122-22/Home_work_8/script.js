@@ -202,7 +202,7 @@ function paymentValid(focusOnError) {
     const value = placing.value;
 
     if (!value) {
-        paymentErrorElem.innerHTML = "выберите рубрику каталога!"
+        paymentErrorElem.innerHTML = "выберите что-то из списка!"
         errFlag = true;
         if (focusOnError) {
             radioDiv.focus();
