@@ -27,15 +27,21 @@
         Посетителей в сутки: <input type="number" name="visitors" value=""><span id="visitorError"></span><br>
         Email для связи: <input type="text" name="email" value=""><span id="mailError"></span><br>
         Рубрика каталога: <select name="division">
-            <option value=""></option>
+            <option value="1"> выбрать из списка</option>
             <option value="здоровье">здоровье</option>
             <option value="домашний уют">домашний уют</option>
             <option value="бытовая техника">бытовая техника</option>
         </select><span id="divError"></span><br>
-        Размещение: <input type="radio" name="payment" value="бесплатное ">бесплатное <input type="radio" name="payment"
-            value="платное">Платное
-        <input type="radio" name="payment" value="VIP">Vip<span id="paymentError"></span> <br>
-        Разрешить отзывы: <input type="checkbox" name="votes"><span id="votesError"></span><br>
+        <div id="radioDiv">
+            Размещение: <input type="radio" name="payment" value="бесплатное ">бесплатное <input type="radio"
+                name="payment" value="платное">Платное
+            <input type="radio" name="payment" value="VIP">Vip<span id="paymentError">
+        </div> </span> <br>
+
+
+        Разрешить отзывы: <input type="checkbox" name="votes"><span id="votesError">
+
+        </span><br>
         Описание сайта: <br> <textarea name="description" cols="50" rows="3"></textarea><span
             id="reviwsError"></span><br>
         <input type="submit" value="опубликовать">

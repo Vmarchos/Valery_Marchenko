@@ -7,9 +7,11 @@ const siteDate = formElem.elements.launchdate;
 const siteVisitors = formElem.elements.visitors;
 const hEmail = formElem.elements.email;
 const divGroup = formElem.elements.division;
-//const placing = formElem.elements.payment;
-//const hVote = formElem.elements.votes;
+const placing = formElem.elements.payment;
+const hVote = formElem.elements.votes;
 //const reviews = formElem.elements.description;
+const radioDiv = document.getElementById('radioDiv');
+
 
 razElem.addEventListener("blur", (eo) => razValid(false))
 siteName.addEventListener("blur", (eo) => nameValid(false))
@@ -18,9 +20,9 @@ siteDate.addEventListener("blur", (eo) => dateValid(false))
 siteVisitors.addEventListener("blur", (eo) => visitorsValid(false))
 hEmail.addEventListener("blur", (eo) => emailValid(false))
 divGroup.addEventListener("click", (eo) => divisionValid(false))
-//placing.addEventListener("blur", paymentValid)
-//hVote.addEventListener("blur", votesValid)
-//reviews.addEventListener("blur", descriptionValid)
+radioDiv.addEventListener("blur", (eo) => paymentValid(false))
+hVote.addEventListener("change", (eo) => votesValid(false))
+//reviews.addEventListener("blur",(eo)=> descriptionValid(false))
 
 formElem.addEventListener("submit", formValid);
 
@@ -34,6 +36,8 @@ function formValid(eo) {
     errFlag = errFlag || dateValid(!errFlag);
     errFlag = errFlag || emailValid(!errFlag);
     errFlag = errFlag || divisionValid(!errFlag);
+    errFlag = errFlag || paymentValid(!errFlag);
+    errFlag = errFlag || votesValid(!errFlag);
     if (errFlag) {
         eo.preventDefault();
     }
@@ -171,7 +175,7 @@ function divisionValid(focusOnError) {
     const divErrorElem = document.getElementById('divError');
     let errFlag = false;
     const value = divGroup.value;
-    if (value == "") {
+    if (value === "1") {
         divErrorElem.innerHTML = "выберите рубрику каталога!"
         errFlag = true;
         if (focusOnError) {
@@ -183,3 +187,38 @@ function divisionValid(focusOnError) {
     }
     return errFlag;
 }
+function paymentValid(focusOnError) {
+    const paymentErrorElem = document.getElementById('paymentError');
+    let errFlag = false;
+    const value = placing.value;
+
+    if (!value) {
+        paymentErrorElem.innerHTML = "выберите рубрику каталога!"
+        errFlag = true;
+        if (focusOnError) {
+            radioDiv.focus();
+        }
+
+    }
+    else {
+        paymentErrorElem.innerHTML = ""
+
+    }
+    return errFlag;
+}
+function votesValid() {
+    const votesErrorElem = document.getElementById('votesError')
+    let errFlag = false;
+    const value = hVote.value;
+    if (!value.checked) {
+        votesErrorElem.innerHTML = "Разрешите отзывы!"
+        errFlag = true;
+    }
+    else {
+        votesErrorElem.innerHTML = ""
+
+    }
+    return errFlag;
+}
+
+
