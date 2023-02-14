@@ -9,7 +9,7 @@ const hEmail = formElem.elements.email;
 const divGroup = formElem.elements.division;
 const placing = formElem.elements.payment;
 const hVote = formElem.elements.votes;
-//const reviews = formElem.elements.description;
+const reviews = formElem.elements.description;
 const radioDiv = document.getElementById('radioDiv');
 
 
@@ -22,7 +22,7 @@ hEmail.addEventListener("blur", (eo) => emailValid(false))
 divGroup.addEventListener("click", (eo) => divisionValid(false))
 radioDiv.addEventListener("blur", (eo) => paymentValid(false))
 hVote.addEventListener("change", (eo) => votesValid(false))
-//reviews.addEventListener("blur",(eo)=> descriptionValid(false))
+reviews.addEventListener("blur", (eo) => descriptionValid(false))
 
 formElem.addEventListener("submit", formValid);
 
@@ -32,14 +32,16 @@ function formValid(eo) {
     errFlag = errFlag || razValid(!errFlag);
     errFlag = errFlag || nameValid(!errFlag);
     errFlag = errFlag || urlValid(!errFlag);
-    errFlag = errFlag || visitorsValid(!errFlag);
     errFlag = errFlag || dateValid(!errFlag);
+    errFlag = errFlag || visitorsValid(!errFlag);
     errFlag = errFlag || emailValid(!errFlag);
     errFlag = errFlag || divisionValid(!errFlag);
     errFlag = errFlag || paymentValid(!errFlag);
     errFlag = errFlag || votesValid(!errFlag);
+    errFlag = errFlag || descriptionValid(!errFlag);
     if (errFlag) {
         eo.preventDefault();
+
     }
 
 
@@ -58,6 +60,7 @@ function razValid(focusOnError) {
         errFlag = true;
         if (focusOnError) {
             razElem.focus();
+            razElem.scrollIntoView();
         }
 
 
@@ -80,6 +83,7 @@ function nameValid(focusOnError) {
         errFlag = true;
         if (focusOnError) {
             siteName.focus();
+            siteName.scrollIntoView();
         }
 
 
@@ -102,6 +106,7 @@ function urlValid(focusOnError) {
         errFlag = true;
         if (focusOnError) {
             siteUrl.focus();
+            siteUrl.scrollIntoView();
         }
 
 
@@ -122,6 +127,7 @@ function dateValid(focusOnError) {
         errFlag = true;
         if (focusOnError) {
             siteDate.focus();
+            siteDate.scrollIntoView();
         }
     }
     else {
@@ -144,6 +150,7 @@ function visitorsValid(focusOnError) {
         errFlag = true;
         if (focusOnError) {
             siteVisitors.focus();
+            siteVisitors.scrollIntoView();
         }
 
 
@@ -163,6 +170,7 @@ function emailValid(focusOnError) {
         errFlag = true;
         if (focusOnError) {
             hEmail.focus();
+            hEmail.scrollIntoView();
         }
     }
     else {
@@ -180,6 +188,7 @@ function divisionValid(focusOnError) {
         errFlag = true;
         if (focusOnError) {
             divGroup.focus();
+            divGroup.scrollIntoView();
         }
     }
     else {
@@ -197,6 +206,7 @@ function paymentValid(focusOnError) {
         errFlag = true;
         if (focusOnError) {
             radioDiv.focus();
+            radioDiv.scrollIntoView();
         }
 
     }
@@ -206,19 +216,39 @@ function paymentValid(focusOnError) {
     }
     return errFlag;
 }
-function votesValid() {
+function votesValid(focusOnError) {
     const votesErrorElem = document.getElementById('votesError')
     let errFlag = false;
-    const value = hVote.value;
-    if (!value.checked) {
+    if (!hVote.checked) {
         votesErrorElem.innerHTML = "Разрешите отзывы!"
         errFlag = true;
+        if (focusOnError) {
+            hVote.focus();
+            hVote.scrollIntoView();
+        }
     }
     else {
-        votesErrorElem.innerHTML = ""
-
+        votesErrorElem.innerHTML = "";
     }
     return errFlag;
-}
+};
+function descriptionValid(focusOnError) {
+    const reviewsErrorElem = document.getElementById('reviwsError')
+    let errFlag = false;
+    const value = reviews.value
+    if (!value) {
+        reviewsErrorElem.innerHTML = "Напишите что-нибудь!"
+        errFlag = true;
+        if (focusOnError) {
+            reviews.focus();
+            reviews.scrollIntoView();
+        }
 
+    }
+    else {
+        reviewsErrorElem.innerHTML = ''
+    }
+    return errFlag;
+
+};
 
