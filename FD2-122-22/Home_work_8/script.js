@@ -24,7 +24,8 @@ radioDiv.addEventListener("blur", (eo) => paymentValid(false))
 hVote.addEventListener("change", (eo) => votesValid(false))
 reviews.addEventListener("blur", (eo) => descriptionValid(false))
 
-formElem.addEventListener("submit", formValid);
+formElem.addEventListener("submit", formValid, false);
+
 
 function formValid(eo) {
     eo = eo || window.event;
@@ -39,57 +40,72 @@ function formValid(eo) {
     errFlag = errFlag || paymentValid(!errFlag);
     errFlag = errFlag || votesValid(!errFlag);
     errFlag = errFlag || descriptionValid(!errFlag);
+    razValid();
+    nameValid();
+    urlValid();
+    dateValid();
+    visitorsValid();
+    emailValid();
+    divisionValid();
+    paymentValid();
+    votesValid();
+    descriptionValid();
     if (errFlag) {
         eo.preventDefault();
-
     }
-
-
-
-
-
 };
+
+
+
+
+
+
 function razValid(focusOnError) {
 
     const razrErrorElem = document.getElementById('razrError');
-    let errFlag = false;
+    var errFlag = false;
     const value = razElem.value;
-
     if (!value) {
-        razrErrorElem.innerHTML = 'Заполните поле!'
-        errFlag = true;
-        if (focusOnError) {
+        console.log('первая валидация')
+        razrErrorElem.innerHTML = 'Заполните поле!';
+
+        if (focusOnError)
             razElem.focus();
-            razElem.scrollIntoView();
-        }
+        razElem.scrollIntoView();
+        errFlag = true;
+
 
 
     }
     else {
-        razrErrorElem.innerHTML = ''
+        razrErrorElem.innerHTML = '';
+
 
     }
     return errFlag;
-
 };
 function nameValid(focusOnError) {
 
     const nameErrorElem = document.getElementById('nameError');
-    let errFlag = false;
+    var errFlag = false;
     const value = siteName.value;
 
     if (!value) {
-        nameErrorElem.innerHTML = 'Заполните поле!'
-        errFlag = true;
-        if (focusOnError) {
-            siteName.focus();
-            siteName.scrollIntoView();
+        console.log('вторая валидация')
+        nameErrorElem.innerHTML = 'Заполните поле!';
+        if (value == '') {
+            nameErrorElem.innerHTML = 'Заполните поле!';
         }
+        if (focusOnError)
+            siteName.focus();
+        siteName.scrollIntoView();
+        errFlag = true;
+
 
 
     }
     else {
-        nameErrorElem.innerHTML = ''
+        nameErrorElem.innerHTML = '';
 
     }
     return errFlag;
@@ -98,16 +114,16 @@ function nameValid(focusOnError) {
 function urlValid(focusOnError) {
 
     const urlErrorElem = document.getElementById('urlError');
-    let errFlag = false;
+    var errFlag = false;
     const value = siteUrl.value;
 
     if (!value) {
         urlErrorElem.innerHTML = 'Заполните поле!'
-        errFlag = true;
-        if (focusOnError) {
+        if (focusOnError)
             siteUrl.focus();
-            siteUrl.scrollIntoView();
-        }
+        siteUrl.scrollIntoView();
+        errFlag = true;
+
 
 
     }
@@ -120,7 +136,7 @@ function urlValid(focusOnError) {
 };
 function dateValid(focusOnError) {
     const dateErrorElem = document.getElementById('dateError');
-    let errFlag = false;
+    var errFlag = false;
     const value = siteDate.value;
     if (!value) {
         dateErrorElem.innerHTML = "Выберите дату!"
@@ -135,10 +151,6 @@ function dateValid(focusOnError) {
 
     }
     return errFlag;
-
-
-
-
 };
 function visitorsValid(focusOnError) {
     const visitErrorElem = document.getElementById('visitorError');
@@ -175,6 +187,7 @@ function emailValid(focusOnError) {
     }
     else {
         mailErrorElem.innerHTML = "";
+
     }
     return errFlag;
 };
@@ -193,9 +206,10 @@ function divisionValid(focusOnError) {
     }
     else {
         divErrorElem.innerHTML = ""
+
     }
     return errFlag;
-}
+};
 function paymentValid(focusOnError) {
     const paymentErrorElem = document.getElementById('paymentError');
     let errFlag = false;
@@ -215,7 +229,7 @@ function paymentValid(focusOnError) {
 
     }
     return errFlag;
-}
+};
 function votesValid(focusOnError) {
     const votesErrorElem = document.getElementById('votesError')
     let errFlag = false;
@@ -229,6 +243,7 @@ function votesValid(focusOnError) {
     }
     else {
         votesErrorElem.innerHTML = "";
+
     }
     return errFlag;
 };
@@ -247,8 +262,8 @@ function descriptionValid(focusOnError) {
     }
     else {
         reviewsErrorElem.innerHTML = ''
+
     }
     return errFlag;
 
 };
-
