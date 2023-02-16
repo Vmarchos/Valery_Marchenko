@@ -20,7 +20,7 @@ siteDate.addEventListener("blur", (eo) => dateValid(false))
 siteVisitors.addEventListener("blur", (eo) => visitorsValid(false))
 hEmail.addEventListener("blur", (eo) => emailValid(false))
 divGroup.addEventListener("click", (eo) => divisionValid(false))
-radioDiv.addEventListener("blur", (eo) => paymentValid(false))
+radioDiv.addEventListener("click", (eo) => paymentValid(false))
 hVote.addEventListener("change", (eo) => votesValid(false))
 reviews.addEventListener("blur", (eo) => descriptionValid(false))
 

@@ -31,8 +31,42 @@
                 elem.onmouseup = imgMouseUp;
             };
 
-        };
 
+            function imgMouseDown(EO) {
+                EO = EO || window.event;
+                EO.preventDefault();
+                console.log('Нажал на картинку');
+
+                var dounShiftCoordX = EO.pageX - EO.target.offsetLeft;
+                var dounShiftCoordY = EO.pageY - EO.target.offsetTop;
+
+                var cont = document.getElementById('box');
+                var pict = EO.target;
+                cont.appendChild(pict);
+
+
+                window.onmousemove = imgMouseMove;
+                function imgMouseMove(EO) {
+                    EO = EO || window.event;
+                    EO.preventDefault();
+                    console.log('Тащу картинку');
+
+                    pict.style.top = (EO.pageY - dounShiftCoordY) + 'px';
+                    pict.style.left = (EO.pageX - dounShiftCoordX) + 'px';
+
+                }
+            }
+
+            function imgMouseUp(EO) {
+                EO.preventDefault();
+                console.log('Отпустил картинку');
+
+                window.onmousemove = null;
+
+            }
+
+
+        };
     </script>
 
 </body>
