@@ -60,8 +60,10 @@
             function imgMouseUp(EO) {
                 EO.preventDefault();
                 console.log('Отпустил картинку');
-
                 window.onmousemove = null;
+                var pict = EO.target;
+                pict.style.cursor = 'default'
+
 
             }
 
