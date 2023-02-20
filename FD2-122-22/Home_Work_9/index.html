@@ -16,60 +16,61 @@
     <img src='http://fe.it-academy.by/Sites/0000007/No_smoking.png' style='padding-left: 50px'>
 
     <script>
-        document.onload = load;
-        load();
-        function load() {
-            let elems = document.getElementsByTagName('img');
-            for (let i = 0; i < elems.length; i++) {
-                const elem = elems[i];
-                elem.style.top = elem.offsetTop + 'px'
-                elem.style.left = elem.offsetLeft + 'px'
-            }
-            for (let i = 0; i < elems.length; i++) {
-                const elem = elems[i];
-                elem.style.position = "absolute"
-                elem.addEventListener("mousedown", imgMouseDown);
-            }
-            let offsetX, offsetY;
-            let dragedImg = null;
-            function imgMouseDown(eo) {
-                eo = eo || window.event;
-                let img = eo.target
-                img.parentNode.appendChild(img);
-                eo.preventDefault();
-                offsetX = eo.pageX - img.offsetLeft;
-                offsetY = eo.pageY - img.offsetTop;
-                dragedImg = img;
-                window.addEventListener('mousemove', imgMouseMove);
-                img.addEventListener('mouseup', imgMouseUp);
-                console.log("нажал на картинку")
-            }
-            function imgMouseMove(eo) {
-                if (!dragedImg)
-                    return;
+        'use strict'
+        window.addEventListener('load', posElem, false);
 
-                eo = eo || window.event;
-                eo.preventDefault();
-                dragedImg.style.left = (eo.pageX - offsetX) + 'px';
-                dragedImg.style.top = (eo.pageY - offsetY) + 'px';
-                console.log("тащу картинку")
-                dragedImg.style.cursor = 'pointer'
+        function posElem(EO) {
+            EO = EO || window.event;
+            EO.preventDefault();
+            var elemArr = document.getElementsByTagName('img');
+            var positionX;
+            var positionY;
 
-
+            for (var i = elemArr.length - 1; i >= 0; i--) {
+                var elem = elemArr[i];
+                elem.style.top = elem.offsetTop + 'px';
+                elem.style.left = elem.offsetLeft + 'px';
+                elem.onmousedown = mouseDown
+                elem.onmouseup = mouseUp;
             }
-            function imgMouseUp(eo) {
-                eo = eo || window.event;
-                eo.preventDefault();
-                let img = eo.target;
-                window.removeEventListener('mousemove', imgMouseMove);
-                img.removeEventListener('mouseup', imgMouseUp);
+            for (i = elemArr.length - 1; i >= 0; i--) {
+                var elem = elemArr[i];
+                elem.style.position = 'absolute'
+            }
+
+            function mouseDown(EO) {
+
+                EO = EO || window.event;
+                EO.preventDefault();
+                var bod = document.body;
+                var image = EO.target;
+                bod.appendChild(image);
+
+                positionX = EO.x - EO.target.offsetLeft;
+                positionY = EO.y - EO.target.offsetTop;
+                console.log('нажал на картинку')
+
+                function mouseMove(EO) {
+                    EO = EO || window.event;
+                    EO.preventDefault();
+                    image.style.left = (EO.x - positionX) + 'px';
+                    image.style.top = (EO.y - positionY) + 'px';
+                    image.style.cursor = "pointer";
+                    console.log('тащу картинку')
+                }
+
+                window.onmousemove = mouseMove;
+            }
+
+            function mouseUp(EO) {
+                EO = EO || window.event;
+                EO.preventDefault();
+                window.onmousemove = null;
                 console.log('отпустил картинку')
-                dragedImg = null;
-                img.style.cursor = 'default';
 
             }
-        }
 
+        }
 
     </script>
 </body>
